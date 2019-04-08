@@ -1,0 +1,165 @@
+baseURL = "https://www.jomar.fr"
+languageCode = "en"
+defaultContentLanguage = "en"
+title = "JoMar"
+theme = "KeepIt"
+
+paginate = 12
+enableEmoji = true
+enableRobotsTXT = true
+googleAnalytics = ""
+disqusShortname = "jomar-2"
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[blackfriday]
+  hrefTargetBlank = true
+  nofollowLinks = true
+  noreferrerLinks = true
+
+[Permalinks]
+ posts = "/:year/:filename/"
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 1
+
+  [[menu.main]]
+    name = "Blog"
+    url = "/post"
+    weight = 2
+
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects"
+    weight = 3
+
+[params]
+    since = 2019
+    author = "JoMar"               # Author's name
+    subtitle = "~ Keep It Simple ~"       # Subtitle
+    cdn_url = ""           # Base CDN URL
+    home_mode = "" # post or other
+
+    google_verification = ""
+    bing_verification = ""
+    yandex_verification = ""
+    pinterest_verification = ""
+    baidu_verification = ""
+
+    socialShare = true
+    
+    description = "" # site description
+    keywords = "InfoSec, Dev, security, bugbounty" # site keywords
+
+    license= 'Released under <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
+[params.gravatar]
+    email = "contact@jomar.fr"
+
+[params.social]
+    GitHub = "JoshuaMart"
+    Linkedin = "joshua-martinelle-a34911133"
+    Twitter = "J0_Mart"
+    #Instagram = "xxxx"
+    Email   = "contact@jomar.fr"
+    #Facebook = "xxxx"
+    #Telegram = "xxxx"
+    #Medium = "xxxx"
+    #Gitlab = "xxxx"
+    #Youtubelegacy = "xxxx"
+    #Youtubecustom = "xxxx"
+    #Youtubechannel = "xxxx"
+    #Tumblr ="xxxx"
+    #Quora = "xxxx"
+    Keybase = "Jomar"
+    #Pinterest = "xxxx"
+    #Reddit = "xxxx"
+    #Codepen = "xxxx"
+    #Bitbucket = "xxxx"
+    #Stackoverflow = "xxxxx"
+    #Weibo = "xxxx"
+    #Odnoklassniki = "xxxx"
+    #VKontakte = "xxxx"
+    #Flickr = "xxxx"
+    #Xing = "xxxx"
+    #Snapchat = "xxxx"
+    #Soundcloud = "xxxx"
+    #Spotify = "xxxx"
+    #Bandcamp = "xxxx"
+    #Paypal = "xxxx"
+    #Fivehundredpx = "xxxx"
+    #Mix = "xxxx"
+    #Goodreads = "xxxx"
+    #Lastfm = "xxxx"
+    #Foursquare = "xxxx"
+    #Hackernews = "xxxx"
+    #Kickstarter = "xxxx"
+    #Patreon = "xxxx"
+    #Steam = "xxxx"
+    #Twitch = "xxxx"
+    #Strava = "xxxx"
+    #Skype = "xxxx"
+    #Whatsapp = "xxxx"
+    #Zhihu = "xxxx"
+    #Douban = "xxxx"
+    #Angellist = "xxxx"
+    #Slidershare = "xxxx"
+    #Jsfiddle = "xxxx"
+    #Deviantart = "xxxx"
+    #Behance = "xxxx"
+    #Dribble = "xxxx"
+    #Wordpress = "xxxx"
+    #Vine = "xxxx"
+    #Googlescholar = "xxxx"
+    #Researchgate = "xxxx"
+    #Mastodon = "xxxx"
+    #Thingiverse = "xxxx"
+
+[params.share]
+Twitter = true
+#Facebook = true
+#Reddit = true
+Linkedin = true
+#Pinterest = true
+#HackerNews = true
+#Mix = true
+#Tumblr = true
+#VKontakte = true
+#Douban = true
+#Weibo = true
+
+# Used only for Seo schema 
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+
+[author]
+  name = "JoMar"
+
+  [params.publisher]
+    name = "JoMar"
+
+    [params.publisher.logo]
+      url = "logo.png"
+      width = 127
+      height = 40
+
+  [params.logo]
+    url = "logo.png"
+    width = 127
+    height = 40
+
+  [params.image]
+    url = "cover.png"
+    width = 800
+    height = 600
+
+[params.gitalk]           
+owner = ""              
+repo = ""               
+clientId = ""           
+clientSecret = ""   
