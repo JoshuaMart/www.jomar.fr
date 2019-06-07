@@ -31,7 +31,7 @@ disqusShortname = "jomar-2"
 
   [[menu.main]]
     name = "Blog"
-    url = "/post"
+    url = "/posts"
     weight = 2
 
   [[menu.main]]
