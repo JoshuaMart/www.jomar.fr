@@ -7,8 +7,8 @@ theme = "KeepIt"
 paginate = 12
 enableEmoji = true
 enableRobotsTXT = true
-googleAnalytics = ""
-disqusShortname = "jomar-2"
+googleAnalytics = "UA-72724857-2"
+disqusShortname = ""
 
 [sitemap]
   changefreq = "monthly"

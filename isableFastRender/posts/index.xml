@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on JoMar</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on JoMar</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 26 Jul 2019 18:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vulnerability 01 : Indirect Object Reference</title>
+      <link>http://localhost:1313/2019/idor/</link>
+      <pubDate>Fri, 26 Jul 2019 18:00:00 +0200</pubDate>
+      
+      <guid>http://localhost:1313/2019/idor/</guid>
+      <description>Définition : Une IDOR se produit lorsqu&amp;rsquo;une application fournit un accès direct à un objet via un input utilisateur (par exemple un ID), si un autre utilisateur connais cette ID il peut-être en mesure d&amp;rsquo;accéder à cet élément sans avoir les autorisations préalable pour y accéder.
+Cette vulnérabilité est du au fait que l&amp;rsquo;application prend les entrées fournies par l&amp;rsquo;utilisateur et les utilise pour récupérer un objet sans effectuer suffisamment de contrôles des autorisations.</description>
+    </item>
+    
+  </channel>
+</rss>
