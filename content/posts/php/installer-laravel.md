@@ -42,7 +42,7 @@ On installe également les modules PHP qui pourront être utiles/nécessaires à
 apt-get -y install unzip zip nginx php7.3 php7.3-mysql php7.3-fpm php7.3-mbstring php7.3-xml php7.3-curl
 ```
 
-## Etape 2.1 - Configuration de PHP & MariaDB <a name="etape21"></a>
+### Etape 2.1 - Configuration de PHP & MariaDB <a name="etape21"></a>
 Avec un éditeur, ouvrez le fichier /etc/php/7.3/fpm/php.ini et modifier les valeurs suivantes :
 ```bash
 memory_limit = 256M       #Ligne 406 => Permet d'augmenter la mémoire limite qu'un script est autorisé à utiliser
