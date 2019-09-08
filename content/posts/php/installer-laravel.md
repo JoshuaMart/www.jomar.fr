@@ -77,7 +77,7 @@ mysql> exit
 
 ## Etape 4 - Installer composer <a name="etape4"></a>
 Composer est le logiciel de gestion de dépendances PHP le plus utilisé, il permet de facilement déclarer/installer les bibliothèques nécessaires aux différents projets.  
-La commande suivante installera composer en version 1.8.4 (Que je conseille actuellement) :
+La commande suivante installera composer en version 1.8.4 :
 ```bash
 apt-get install composer -y
 ```
@@ -86,7 +86,6 @@ Si jamais vous souhaitez obtenir la dernière version de composer (1.9 à la dat
 ```bash
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
 ```
-Cependant, si vous installer la version 1.9 de composer, vous installerez la version 6 de Laravel !
 
 ## Etape 5 - Configuration de Nginx & création du vHost <a name="etape5"></a>
 Afin de partir sur une bonne base, vous pouvez utiliser le site [nginxconfig.io](https://nginxconfig.io).  
@@ -166,7 +165,7 @@ cd /var/www/laravel.jomar.ovh
 
 Créer votre projet laravel grâce à composer :
 ```bash
-composer create-project laravel/laravel .
+composer create-project laravel/laravel="5.8.*" .
 ```
 
 Une terminé, n'oubliez pas d'attribuer le dossier à l'utilisateur www-data :
