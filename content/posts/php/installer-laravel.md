@@ -1,5 +1,5 @@
 ---
-title: "[FR] - Installer Laravel - Debian10 / Nginx"
+title: "[FR] - Installer Laravel 6 - Debian10 / Nginx"
 date: 2019-09-08T10:52:31+02:00
 draft: false
 ---
