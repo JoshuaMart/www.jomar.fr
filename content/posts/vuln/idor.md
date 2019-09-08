@@ -1,5 +1,5 @@
 ---
-title: "Vulnerability tutorial 01 : Insecure Direct Object Reference"
+title: "[EN] - Vulnerability tutorial 01 : Insecure Direct Object Reference"
 date: 2019-07-26T18:00:00+02:00
 draft: false
 ---

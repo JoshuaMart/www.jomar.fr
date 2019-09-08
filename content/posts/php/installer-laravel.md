@@ -1,10 +1,10 @@
 ---
-title: "Installer Laravel - Debian10 / Nginx"
+title: "[FR] - Installer Laravel - Debian10 / Nginx"
 date: 2019-09-08T10:52:31+02:00
 draft: false
 ---
 
-Ayant récemment repris un peu le PHP, je vous propose ce tuto pour une installation sur Debian 10 avec Nginx & PHP-FPM.  
+Ayant récemment repris un peu le PHP, je vous propose ce tuto pour une installation de **Laravel 5.8** sur Debian 10 avec Nginx & PHP-FPM.  
 Dans ce tutoriel nous aborderons les points suivants :  
 
 1. [Mise à jour du serveur](#etape1)
@@ -77,7 +77,7 @@ mysql> exit
 
 ## Etape 4 - Installer composer <a name="etape4"></a>
 Composer est le logiciel de gestion de dépendances PHP le plus utilisé, il permet de facilement déclarer/installer les bibliothèques nécessaires aux différents projets.  
-La commande suivante installera composer en version 1.8.4 :
+La commande suivante installera composer en version 1.8.4 (Que je conseille actuellement) :
 ```bash
 apt-get install composer -y
 ```
@@ -86,6 +86,7 @@ Si jamais vous souhaitez obtenir la dernière version de composer (1.9 à la dat
 ```bash
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
 ```
+Cependant, si vous installer la version 1.9 de composer, vous installerez la version 6 de Laravel !
 
 ## Etape 5 - Configuration de Nginx & création du vHost <a name="etape5"></a>
 Afin de partir sur une bonne base, vous pouvez utiliser le site [nginxconfig.io](https://nginxconfig.io).  
