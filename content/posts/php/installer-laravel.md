@@ -4,7 +4,7 @@ date: 2019-09-08T10:52:31+02:00
 draft: false
 ---
 
-Ayant récemment repris un peu le PHP, je vous propose ce tuto pour une installation de **Laravel 5.8** sur Debian 10 avec Nginx & PHP-FPM.  
+Ayant récemment repris un peu le PHP, je vous propose ce tuto pour une installation de **Laravel 6** sur Debian 10 avec Nginx & PHP-FPM.  
 Dans ce tutoriel nous aborderons les points suivants :  
 
 1. [Mise à jour du serveur](#etape1)
@@ -165,7 +165,7 @@ cd /var/www/laravel.jomar.ovh
 
 Créer votre projet laravel grâce à composer :
 ```bash
-composer create-project laravel/laravel="5.8.*" .
+composer create-project laravel/laravel .
 ```
 
 Une terminé, n'oubliez pas d'attribuer le dossier à l'utilisateur www-data :
