@@ -155,11 +155,19 @@ Puis générer le fichier de configuration dans ```/config``` avec la commande s
 php artisan vendor:publish --provider="Biscolab\ReCaptcha\ReCaptchaServiceProvider"
 ```
 
+Dans le fichier ```config/recaptcha.php```qu'on viens de générer, modifier la version de reCaptcha :
+```php
+return [
+	...
+    'version'                       => 'v3', // supported: "v3"|"v2"|"invisible"
+    ...
+];
+```
+
 Ensuite, dans le fichier ```.env```ajouter les lignes suivantes tout en y ajoutant les clés que vous obtiendrez en ajoutant un site sur la console d'administration [google reCaptcha(https://www.google.com/u/1/recaptcha/admin/)
 ```php
 RECAPTCHA_SITE_KEY=YOUR_API_SITE_KEY
 RECAPTCHA_SECRET_KEY=YOUR_API_SECRET_KEY
-RECAPTCHA_DEFAULT_VERSION=v3
 ```
 
 On reload ensuite la configuration du site :
@@ -169,7 +177,7 @@ php artisan config:cache
 
 Puis il ne vous reste plus qu'à ajouter le snippet suivant dans vos pages Laravel ou vous souhaitez avoir reCaptcha d'actif :
 ```html
-{!! htmlScriptTagJsApiV3([
+{!! htmlScriptTagJsApi([
             'action' => 'homepage'
         ]) !!}
 ```
