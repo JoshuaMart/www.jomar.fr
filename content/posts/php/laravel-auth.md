@@ -133,7 +133,6 @@ Voici la configuration que je vous préconise, il faut modifier les lignes corre
 ```bash
 'cookie' => '__Host-sess', #Ligne 127
 'secure' => env('SESSION_SECURE_COOKIE', true), #Ligne 166
-'same_site' => 'strict', #Ligne 194
 ```
 Inutile de modifier les autres paramètres.
 
