@@ -93,7 +93,7 @@ Remplissez les différents champs avec les informations de votre site, la seule 
 
 ![](/images/2019/php/laravel_nginxconfig.png)
 
-Globalement, vous pouvez utilisez la configuration générée par l'outil, pour ma part, je retire seulement les éléments let's encrypt pour gérer cette partie par moi-même et je modifie la version de PHP dans le fichier ```/etc/nginx/nginxconfig.io/php_fastcgi.conf```pour correspondre à la version PHP installer et je ne créer pas le fichier ```/etc/nginx/nginxconfig.io/letsencrypt.conf```
+Globalement, vous pouvez utilisez la configuration générée par l'outil, pour ma part, je retire seulement les éléments let's encrypt pour gérer cette partie par moi-même et je modifie la version de PHP dans le fichier ```/etc/nginx/nginxconfig.io/php_fastcgi.conf```pour correspondre à la version PHP installer et je ne créé pas le fichier ```/etc/nginx/nginxconfig.io/letsencrypt.conf```
 
 ```bash
 nano /etc/nginx/sites-available/laravel.jomar.ovh.conf
@@ -138,7 +138,7 @@ add_header X-Frame-Options "SAMEORIGIN" always;
 add_header X-XSS-Protection "1; mode=block" always;
 add_header X-Content-Type-Options "nosniff" always;
 add_header Referrer-Policy "no-referrer-when-downgrade" always;
-add_header Content-Security-Policy "default-src 'self' http: https: data: blob: 'unsafe-inline'" always;
+add_header Content-Security-Policy "default-src 'self' http: https: data: blob: 'unsafe-inline' 'unsafe-eval'" always;
 add_header Feature-Policy "midi none;notifications none;push none;sync-xhr none;microphone none;camera none;magnetometer none;gyroscope none;speaker self;vibrate none;fullscreen self;payment none;";
 add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
 
