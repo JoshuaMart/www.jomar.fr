@@ -1,8 +1,5 @@
 ---
-keywords:
-- test
-- golang
-title: "[EN] - Binary search in Golang on large files "
+title: "[EN] - Binary search in Golang on large files"
 date: 2020-01-26T11:00:00+02:00
 draft: false
 ---
