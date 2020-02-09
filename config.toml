@@ -1,165 +1,140 @@
 baseURL = "https://www.jomar.fr"
-languageCode = "en"
-defaultContentLanguage = "en"
-title = "JoMar"
-theme = "KeepIt"
+title   = "Jomar"
 
-paginate = 12
-enableEmoji = true
-enableRobotsTXT = true
+DefaultContentLanguage = "en"
+
+theme = "hello-friend-ng"
+
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+
+rssLimit  = 0  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+
 googleAnalytics = "UA-72724857-2"
-disqusShortname = ""
+# disqusShortname = ""
 
-[sitemap]
-  changefreq = "monthly"
-  filename = "sitemap.xml"
-  priority = 0.5
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+buildDrafts  = false
+buildFuture  = false
+buildExpored = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = true
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+[author]
+  name = "Jomar"
 
 [blackfriday]
   hrefTargetBlank = true
-  nofollowLinks = true
-  noreferrerLinks = true
 
-[Permalinks]
- posts = "/:year/:filename/"
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  # Metadata mostly used in document's head
+  description = "Nice theme for homepages and blogs"
+  keywords = "Blog Bugbounty"
+  images = [""]
+
+  homeSubtitle = "~ Simple blog of a little BugHunter ~"
+
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  # gitUrl = ""
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Integrate Javascript files or stylesheets by adding the url to the external assets or by
+  # linking local files with their path relative to the static folder, e.g. "css/styles.css"
+  customCSS = []
+  customJS  = []
+
+  # Toggle this option need to rebuild SCSS, requires extended version of Hugo
+  justifyContent = false  # Set "text-align: justify" to .content.
+
+  # Directory name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+
+  # Default theme "light" or "dark"
+  defaultTheme = "light"
+  themeColor = "#252627"
+
+  # Colors for favicons
+  [params.favicon.color]
+    mask = "#252627"
+    msapplication = "#252627"
+    theme = "#252627"
+
+  [params.logo]
+    logoText     = "$ cd /home/"
+    logoHomeLink = "/"
+    # Set to a valid CSS color to change the cursor in the logo.
+    # logoColor    = "#67a2c9"
+
+  # Social icons
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/J0_mart"
+
+  [[params.social]]
+    name = "email"
+    url  = "mailto:contact@jomar.fr"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/JoshuaMart"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/joshua-martinelle-a34911133"
+
+  [[params.social]]
+    name = "keybase"
+    url  = "https://keybase.io/Jomar"
+
+[languages]
+  [languages.en]
+    subtitle  = "Hello Friend NG Theme"
+    weight    = 1
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
+  [languages.fr]
+    subtitle  = "Hello Friend NG Theme"
+    weight    = 2
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
 [menu]
   [[menu.main]]
-    name = "About"
-    url = "/about"
-    weight = 1
-
+    identifier = "about"
+    name       = "About"
+    url        = "about/"
   [[menu.main]]
-    name = "Blog"
-    url = "/posts"
-    weight = 2
-
+    identifier = "posts"
+    name       = "Posts"
+    url        = "posts/"
   [[menu.main]]
-    name = "Projects"
-    url = "/projects"
-    weight = 3
-
-[params]
-    since = 2019
-    author = "JoMar"               # Author's name
-    subtitle = "~ Keep It Simple ~"       # Subtitle
-    cdn_url = ""           # Base CDN URL
-    home_mode = "" # post or other
-
-    google_verification = ""
-    bing_verification = ""
-    yandex_verification = ""
-    pinterest_verification = ""
-    baidu_verification = ""
-
-    socialShare = true
-    
-    description = "" # site description
-    keywords = "InfoSec, Dev, security, bugbounty" # site keywords
-
-    license= 'Released under <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
-
-[params.gravatar]
-    email = "contact@jomar.fr"
-
-[params.social]
-    GitHub = "JoshuaMart"
-    Linkedin = "joshua-martinelle-a34911133"
-    Twitter = "J0_Mart"
-    #Instagram = "xxxx"
-    Email   = "contact@jomar.fr"
-    #Facebook = "xxxx"
-    #Telegram = "xxxx"
-    #Medium = "xxxx"
-    #Gitlab = "xxxx"
-    #Youtubelegacy = "xxxx"
-    #Youtubecustom = "xxxx"
-    #Youtubechannel = "xxxx"
-    #Tumblr ="xxxx"
-    #Quora = "xxxx"
-    Keybase = "Jomar"
-    #Pinterest = "xxxx"
-    #Reddit = "xxxx"
-    #Codepen = "xxxx"
-    #Bitbucket = "xxxx"
-    #Stackoverflow = "xxxxx"
-    #Weibo = "xxxx"
-    #Odnoklassniki = "xxxx"
-    #VKontakte = "xxxx"
-    #Flickr = "xxxx"
-    #Xing = "xxxx"
-    #Snapchat = "xxxx"
-    #Soundcloud = "xxxx"
-    #Spotify = "xxxx"
-    #Bandcamp = "xxxx"
-    #Paypal = "xxxx"
-    #Fivehundredpx = "xxxx"
-    #Mix = "xxxx"
-    #Goodreads = "xxxx"
-    #Lastfm = "xxxx"
-    #Foursquare = "xxxx"
-    #Hackernews = "xxxx"
-    #Kickstarter = "xxxx"
-    #Patreon = "xxxx"
-    #Steam = "xxxx"
-    #Twitch = "xxxx"
-    #Strava = "xxxx"
-    #Skype = "xxxx"
-    #Whatsapp = "xxxx"
-    #Zhihu = "xxxx"
-    #Douban = "xxxx"
-    #Angellist = "xxxx"
-    #Slidershare = "xxxx"
-    #Jsfiddle = "xxxx"
-    #Deviantart = "xxxx"
-    #Behance = "xxxx"
-    #Dribble = "xxxx"
-    #Wordpress = "xxxx"
-    #Vine = "xxxx"
-    #Googlescholar = "xxxx"
-    #Researchgate = "xxxx"
-    #Mastodon = "xxxx"
-    #Thingiverse = "xxxx"
-
-[params.share]
-Twitter = true
-#Facebook = true
-#Reddit = true
-Linkedin = true
-#Pinterest = true
-#HackerNews = true
-#Mix = true
-#Tumblr = true
-#VKontakte = true
-#Douban = true
-#Weibo = true
-
-# Used only for Seo schema 
-copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
-
-[author]
-  name = "JoMar"
-
-  [params.publisher]
-    name = "JoMar"
-
-    [params.publisher.logo]
-      url = "logo.png"
-      width = 127
-      height = 40
-
-  [params.logo]
-    url = "logo.png"
-    width = 127
-    height = 40
-
-  [params.image]
-    url = "cover.png"
-    width = 800
-    height = 600
-
-[params.gitalk]           
-owner = ""              
-repo = ""               
-clientId = ""           
-clientSecret = ""   
+    identifier = "projects"
+    name       = "Projects"
+    url        = "projects/"

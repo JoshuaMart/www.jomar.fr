@@ -2,6 +2,7 @@
 title: "[EN] - Starting BugBounty : From noob to beginner "
 date: 2019-12-31T17:00:00+02:00
 draft: false
+tags: ["BugBounty", "Tips", "Tuto"]
 ---
 
 Through this article I would like to explain how I was able to start bugbounty this year with the hope that it will help some people.

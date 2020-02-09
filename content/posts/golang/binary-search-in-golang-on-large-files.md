@@ -2,6 +2,7 @@
 title: "[EN] - Binary search in Golang on large files"
 date: 2020-01-26T11:00:00+02:00
 draft: false
+tags: ["Development", "Go", "fast", "BinarySearch"]
 ---
 
 For a recent need I wish to make a return on the implementation of the binary search in Go on a large file
@@ -23,7 +24,7 @@ The main problem encountered is that the different implementations found was on 
 
 Found [here](https://www.reddit.com/r/golang/comments/55pyas/how_to_read_2gb_text_file_with_small_ram/), you can implement this in this way : 
 
-```golang
+```go
 file, err := os.Open("big_file.txt")
 if err != nil {
     println(err)
@@ -49,7 +50,7 @@ Globally, for each line of the input file, I reset the values *start*, *end* and
 
 If you want to use this piece of code for something other than hashes, just modify the regex which in this case is designed to search for NTLM hashes and therefore the large hash file has lines in the form `hash:occurence`.
 
-```golang
+```go
 package main
 
 import (

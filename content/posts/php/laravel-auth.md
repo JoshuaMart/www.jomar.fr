@@ -2,6 +2,7 @@
 title: "[FR] - Tuto authentification Laravel"
 date: 2019-09-08T10:52:31+02:00
 draft: false
+tags: ["Development", "PHP", "Laravel", "Install"]
 ---
 
 Pour suivre à mon premier article sur [l'installation de Laravel](/2019/installer-laravel/), cet article va vous expliquer comment mettre en place un système d'authentification (Register, Email confirmation, Login, Logout, Forgot Password) sur **Laravel 6**, comment mieux sécurisé les cookies du site et la mise en place de reCaptchaV3 sur vos formulaires.
