@@ -1,6 +1,6 @@
 ---
 title: "[EN] - TryHackMe : DogCat writeup "
-date: 2019-12-31T17:00:00+02:00
+date: 2020-04-19T11:00:00+02:00
 draft: false
 tags: ["CTF", "THM", "TryHackMe", "DogCat", "Writeup"]
 ---
