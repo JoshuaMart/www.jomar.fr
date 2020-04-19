@@ -6,7 +6,7 @@ tags: ["CTF", "THM", "TryHackMe", "DogCat", "Writeup"]
 ---
 
 Hey, everybody,  
-Here is my first writeup post about a CTF, and for the moment, I propose you my solution of the [Dogcat](https://tryhackme.com/room/dogcat) challenge on the TryHackMe website.
+Here is my first writeup post about a CTF, and for the moment, I propose you my solution of the [Dogcat](https://tryhackme.com/room/dogcat) challenge on the [TryHackMe](https://tryhackme.com) website.
 
 The goal of this machine is to get 4 flags, by reading the description of the machine and the twitter post of the box, we may already know that we will have to use a LFI and escape a docker container.
 
@@ -155,3 +155,9 @@ And tap into our Kali machine.
 
 Here we go, root on the host machine, we just need to retrieve the last flag:
 ![](/images/2020/ctf/THM_Dogcat_Flag4.png)
+
+## Conclusion
+
+The [TryHackMe] site (https://tryhackme.com) is a good site in general I think, I've been chaining the different machines for about a week now and I've learned a lot, here again it's an interesting challenge because it's not a very basic LFI, it requires to get the source code and understand it to be able to go further.
+
+It's also the first time I've encountered a challenge where I had to drop a container, which is really interesting.
