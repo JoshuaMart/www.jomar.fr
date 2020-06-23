@@ -6,4 +6,5 @@ draft: false
 
  - [AutoRecon](https://github.com/JoshuaMart/AutoRecon) : Simple shell script for automated domain recognition & monitoring with some tools.  
  - [PwnedPasswordsChecker](https://github.com/JoshuaMart/PwnedPasswordsChecker) : A Golang tool for searching (offline) if your password (NTLM or SHA1 format) has been leaked (IBBP passwords list v5).  
+ - [HIBP PasswordList Slimmer](https://github.com/JoshuaMart/HIBP_PasswordList_Slimmer) : Tool in Go designed to reduce the size of Have I Been Pwned password lists and speed up searching.
  - [WebSecurityWiki](https://github.com/JoshuaMart/WebSecurityWiki) : My personnal wiki about web pentesting.
