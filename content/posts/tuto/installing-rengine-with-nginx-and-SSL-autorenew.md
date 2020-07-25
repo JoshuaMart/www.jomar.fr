@@ -33,6 +33,8 @@ So once you've changed the two variables and run the script
 ```bash
 ./Auto_Nginx_Rengine.sh
 ```
+If you are in case number 2, you will have to modify the file `/etc/nginx/sites-available/{your_domain_domain.tld}.conf` and modify the line `proxy_pass` by changing the IP to that of your second server.
+
 All that will be left is to install Rengine :
 ```bash
 git clone https://github.com/yogeshojha/rengine.git
