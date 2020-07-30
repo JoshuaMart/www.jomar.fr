@@ -5,8 +5,6 @@ draft: false
 tags: ["BugBounty", "Tips", "Tuto", Rengine]
 ---
 
-[EDIT 30/07/20] : Unfortunately this tutorial doesn't work anymore with the latest version of Rengine using the Makefile, if you want to use Nginx like here (via another server or install directly on the same machine as docker) you'll have to delete the `docker-compose.setup.yml` file and modify the `docker-compose.yml` file to expose the web container and delete the proxy container
-
 Recently, I teased on [Twitter](https://twitter.com/J0_mart/status/1272842255057981440) a new version of [AutoRecon](https://github.com/JoshuaMart/AutoRecon) with a web interface :
 
 ![AutoRecon panel](/images/2020/tuto/rengine_autorecon_panel.png)
@@ -15,9 +13,11 @@ But it was without counting on the incredible work of [Yogeshojha](https://twitt
 
 ![Rengine panel](/images/2020/tuto/rengine_panel.png)
 
-I propose here to show you quickly how to install it and access it in HTTPS.
+I propose here to show you quickly how to install it and access it in HTTPS. Since the latest versions of Rengine, it also includes a Nginx container (with certificate generation) unfortunately this did not suit me, so I adapted the configuration to fit my current architecture.
 
-To do this, I created a small script that will install the different dependencies (Nginx, Docker, Certbot) and configure Nginx.
+In addition to removing the `docker-compose.setup.yml` file I made changes in the `Makefile` and `docker-compose.yml` file which you can find [here](https://gist.github.com/JoshuaMart/2e6a62c726868513de722f7b3cd1d6d4).
+
+Next, I created a small script that will install the different dependencies (Nginx, Docker, Certbot) and configure Nginx.
 
 Prerequisites are to have a domain pointing to your server. Concerning this one, I recommend you to take a VPS with at least 2Gb of RAM because I had difficulties to install Rengine on a machine with 1Gb especially with the installation of some tools or without going into details, Go consumes too much memory to install them.
 
@@ -40,18 +40,15 @@ All that will be left is to install Rengine :
 ```bash
 git clone https://github.com/yogeshojha/rengine.git
 cd rengine
-docker-compose up --build
-```
-
-Once the container is correctly launched, stop it with `CTRL+C` and then relaunch it with :
-```bash
-docker-compose up -d
+make up
 ```
 
 Then all you have to do is create an account on the application with the command :
 ```bash
-docker exec -it rengine_web_1 python manage.py createsuperuser
+make username
 ```
 
 That's it, all you have to do is access your domain.
 ![Rengine Nginx usecase](/images/2020/tuto/rengine_https.png)
+
+It's possible that you don't have an image / CSS on the login page, but once logged in everything is ok.
