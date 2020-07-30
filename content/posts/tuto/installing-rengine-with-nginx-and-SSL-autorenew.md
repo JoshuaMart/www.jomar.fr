@@ -5,6 +5,7 @@ draft: false
 tags: ["BugBounty", "Tips", "Tuto", Rengine]
 ---
 
+[EDIT 30/07/20] : Unfortunately this tutorial doesn't work anymore with the latest version of Rengine using the Makefile, if you want to use Nginx like here (via another server or install directly on the same machine as docker) you'll have to delete the `docker-compose.setup.yml` file and modify the `docker-compose.yml` file to expose the web container and delete the proxy container
 
 Recently, I teased on [Twitter](https://twitter.com/J0_mart/status/1272842255057981440) a new version of [AutoRecon](https://github.com/JoshuaMart/AutoRecon) with a web interface :
 
