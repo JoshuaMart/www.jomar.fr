@@ -5,3 +5,4 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: no-referrer-when-downgrade
   Content-Security-Policy: default-src https://www.jomar.fr:443
+  Feature-Policy : camera 'none'; geolocation 'none'; microphone 'none'
