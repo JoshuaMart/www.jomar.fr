@@ -5,6 +5,8 @@ draft: false
 tags: ["BugBounty", "Tips", "Tuto", Rengine]
 ---
 
+[EDIT] : This post doesn't work anymore with the latest versions of nuclei, look instead at [My bounty infrastructure with Docker](/posts/2020/08/en-my-bounty-infrastructure-with-docker/)
+
 Recently, I teased on [Twitter](https://twitter.com/J0_mart/status/1272842255057981440) a new version of [AutoRecon](https://github.com/JoshuaMart/AutoRecon) with a web interface :
 
 ![AutoRecon panel](/images/2020/tuto/rengine_autorecon_panel.png)
