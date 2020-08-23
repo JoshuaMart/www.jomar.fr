@@ -19,6 +19,7 @@ The following services will be installed on your server :
  - [Portainer](https://www.portainer.io/) : Container docker to manage other containers via a web interface, optional but rather useful at first I find and it allows you easy access to the logs of your containers, metrics and shells if needed.
  - [PHP & Apache](https://hub.docker.com/_/php) : Container docker PHP / Apache to host files for our different pocs. I use for example a php file to make redictions when I have a SSRF (cf : [Exploiting my first SSRF](https://www.jomar.fr/posts/2020/03/en-exploiting-my-first-ssrf/)).
  - [Rengine](https://github.com/yogeshojha/rengine/): Container docker for subdomain recognition. For functionality reasons, in this tutorial I will use a version that I modified with [Serizao](https://twitter.com/WilliamSerizao)
+ - [WebHook](https://github.com/fredsted/webhook.site) : Container docker for use, test and debug Webhooks and HTTP requests
 
 ![](/images/2020/tuto/bnty_docker_schema.png)
 
@@ -31,6 +32,7 @@ The following services will be installed on your server :
 		- `poc.your_domain.tld IN CNAME traefik.your_domain.tld`
 		- `xss.your_domain.tld IN CNAME traefik.your_domain.tld`
 		- `recon.your_domain.tld IN CNAME traefik.your_domain.tld`
+    - `webhook.your_domain.tld IN CNAME traefik.your_domain.tld`
 		- `portainer.your_domain.tld IN CNAME traefik.your_domain.tld`
 		- `your_domain.tld CAA 128 issue "letsencrypt.org"`
 
@@ -52,6 +54,7 @@ cd ../ && cd Portainer && docker-compose up -d
 cd ../ && cd Poc && docker-compose up -d
 cd ../ && cd XSS-Catcher && docker-compose up -d
 cd ../ && cd Rengine && docker-compose up -d
+cd ../ && cd Webhook && docker-compose up -d
 ```
 All of your containers should now be started.
 
@@ -130,7 +133,14 @@ docker-compose restart
 make username
 ```
 
-Rengine will be accessible via [https://recon.your_domain.tld](recon.your_domain.tld)
+Rengine will be accessible via [https://recon.your_domain.tld](https://recon.your_domain.tld)
+
+## Webhook
+Pretty handy if you don't have access to burp collaborator or if you don't want to use it. It can also make it easier to manage if you have several requests to make and it's more ergnomic.
+
+![](/images/2020/tuto/bnty_docker_webhook.png)
+
+Webhook will be accessible via [https://webhook.your_domain.tld](https://webhook.your_domain.tld)
 
 ## Add a new container
 In case you want to add a new container, here's what you need to do.
