@@ -151,7 +151,7 @@ If you feel lost that you don't know how to search, start with small scopes and 
 - [Real‑World Bug Hunting](https://www.amazon.fr/Real-World-Bug-Hunting-Field-Hacking/dp/1593278616) : A Field Guide to Web Hacking
 - [Nahamsec](https://www.youtube.com/channel/UCCZDt7MuC3Hzs6IH4xODLBw) Youtube Channel
 - [Stök](https://www.youtube.com/channel/UCQN2DsjnYH60SFBIA6IkNwg) Youtube Channel
-- There are many twitter accounts sharing information about bugbounty or do a search with the hashtag #BoutyTips / #BugBountyTips
+- There are many twitter accounts sharing information about bugbounty or do a search with the hashtag #BountyTips / #BugBountyTips
 - You can ask to join Discord Hacker101 which is an excellent community.
 ---
 The tools I almost always use :
