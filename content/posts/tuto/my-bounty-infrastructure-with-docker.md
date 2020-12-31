@@ -58,7 +58,7 @@ All of your containers should now be started.
 
 ## Configuration of each of the containers
 ### Traefik
-With the new proposed configuration of 24/12/2020, it will first be necessary to change the IP address by yours in the file `Traefik/dynamic/middlewares.toml`.
+With the new proposed configuration of 24/12/2020, it will first be necessary to change the IP address by yours in the file `Traefik/dynamic/middlewares.toml`.  
 You can add one or more IP address with the corresponding mask, to recall /32 for a single IP. This middleware is actually used to add IP protection on some of your containers, so they will only be accessible to people with an authorized IP address.
 
 Check that the `/root/Traefik/config/acme.json` file is not empty, if this is the case, check your DNS or make sure it is `chmod 0600`.
@@ -88,7 +88,7 @@ I also made several modifications on my side to make it work via Traefik. The ba
 
 Why keep a second reverse proxy would you tell me ? simply because without it you won't have CSS / JS. I didn't look too much but it seems that for example on the login, Rengine checks that you are authenticated before loading the static files, which is of course not the case, the Nginx reverse proxy makes sure to overload its files so that they are returned to you.
 
-Rengine will be accessible via [https://recon.your_domain.tld](https://recon.your_domain.tld) à condition que vous ayez bien renseigné votre adresse IP dans `Traefik/dynamic/middlewares.toml`
+Rengine will be accessible via [https://recon.your_domain.tld](https://recon.your_domain.tld) as long as you have entered your IP address correctly in `Traefik/dynamic/middlewares.toml`
 
 ![](/images/2020/tuto/bnty_docker_rengine.png)
 
