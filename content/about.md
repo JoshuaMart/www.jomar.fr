@@ -17,6 +17,9 @@ Joshua, 25 years old, security consultant (Web & Internal Pentester / Vulnerabil
 - CVE-2020-25069 : Raising an RCE in the uSVN product
 - CVE-XXXX-XXXX : _Awaiting publication_
 
+- Rank 10 on [PortSwigger WebSecurity Academy - Authentication](https://portswigger.net/web-security/hall-of-fame/authentication)
+- Rank 6 on [PortSwigger WebSecurity Academy - Information Disclosure](https://portswigger.net/web-security/hall-of-fame/information-disclosure)
+
 See more on my [Linkedin](https://www.linkedin.com/in/joshua-martinelle-a34911133/)
 
 My email : contact@jomar.fr
