@@ -1,0 +1,65 @@
+# section information
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true 
+
+# Your experiences
+experiences:
+- company:
+    name: Tenable.
+    url: "https://www.tenable.com"
+    location: Remote
+    overview: Tenable, Inc. is a cybersecurity company based in Columbia, Maryland. It is known as the creator of the vulnerability scanning software Nessus.
+  positions:
+  - designation: Senior Software Engineer
+    start: Feb 2021
+    responsibilities:
+    - Development of plugins for the Web Application Scanner solution
+    - Vulnerability analysis
+    - Creation of lab and proof of concept
+ 
+- company:
+    name: Synetis.
+    url: "https://www.synetis.com"
+    location: Rennes
+    overview: Consulting firm in digital transformation and information systems security.
+  positions:
+  - designation: Pentester
+    start: Sept 2018
+    end: Jan 2021
+    responsibilities:
+    - Internal and external penetration tests
+    - OSINT
+    - Technical training
+    - Vulnerability management
+    - Project management
+
+- company:
+    name: Libricks
+    url: "https://www.libricks.fr"
+    location: Laval
+    overview: Libricks analyses and contributes to the main Free (Open Source) IT projects.
+  positions:
+  - designation: System and network administrator
+    start: Sept 2017
+    end: Sept 2018
+    responsibilities:
+    - Installation and administration of infrastructures based on open source solutions
+    - Project management
+
+- company:
+    name: CFAVM
+    location: Laval
+    overview: Training center for young people in various trades such as food service
+  positions:
+  - designation: System and network administrator
+    start: Sept 2015
+    end: Sept 2017
+    responsibilities:
+    - Management of a computer park with mainly Windows services (AD, Exchange, SQL Server, ...)
+    - Project management
