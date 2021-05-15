@@ -43,3 +43,6 @@ params:
     headerBackground: aliceblue
     # Set note card title color.
     headerTextColor: #1c2d41
+
+# Enable Google Analytics
+googleAnalytics: UA-72724857-2
