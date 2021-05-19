@@ -16,7 +16,7 @@ experiences:
     location: Remote
     overview: Tenable, Inc. is a cybersecurity company based in Columbia, Maryland. It is known as the creator of the vulnerability scanning software Nessus.
   positions:
-  - designation: Senior Software Engineer
+  - designation: Research Engineer
     start: Feb 2021
     responsibilities:
     - Development of plugins for the Web Application Scanner solution
