@@ -2,9 +2,9 @@
 # unless otherwise overridden by more specific contexts.
 [build]
 
-# A basic redirect rule
-[[redirects]]
-  from = "/posts/2021/my_firstblood_methodology/"
-  to = "https://www.bugbountyhunter.com/articles/?on=firstbloodhackers"
-  status = 301
-  force = false
+  # A basic redirect rule
+  [[redirects]]
+    from = "/posts/2021/my_firstblood_methodology/"
+    to = "https://www.bugbountyhunter.com/articles/?on=firstbloodhackers"
+    status = 301
+    force = false
