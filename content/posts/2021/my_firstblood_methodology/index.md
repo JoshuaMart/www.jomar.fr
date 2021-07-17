@@ -1,5 +1,5 @@
 ---
-title: "My bounty infrastructure"
+title: "My methodology during Firstblood"
 date: 2021-07-17T10:00:00+01:00
 hero: article_banner.png
 description: My bounty infrastructure
