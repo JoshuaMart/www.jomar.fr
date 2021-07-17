@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://www.jomar.fr/posts/2021/my_firstblood_methodology/"
+  to = "https://www.bugbountyhunter.com/articles/?on=firstbloodhackers"
+  status = 301
+  force = true
