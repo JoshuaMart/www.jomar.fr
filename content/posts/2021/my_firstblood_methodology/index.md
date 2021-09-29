@@ -2,11 +2,11 @@
 title: "My methodology during Firstblood"
 date: 2021-07-17T10:00:00+01:00
 hero: article_banner.png
-description: My bounty infrastructure
+description: My methodology during Firstblood
 menu:
   sidebar:
-    name: My bounty infrastructure
-    identifier: My bounty infrastructure
+    name: My methodology during Firstblood
+    identifier: My methodology during Firstblood
     weight: 2
 ---
 
