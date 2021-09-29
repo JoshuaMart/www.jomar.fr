@@ -3,3 +3,9 @@
   to = "https://www.bugbountyhunter.com/articles/?on=firstbloodhackers"
   status = 301
   force = true
+
+[[redirects]]
+  from = "https://www.jomar.fr/posts/2021/learning_new_things/"
+  to = "https://www.bugbountyhunter.com/articles/?on=mass-assignment-and-learning-new-things"
+  status = 301
+  force = true
