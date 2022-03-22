@@ -30,15 +30,15 @@ As I was undecided on the use of Nuclei, I decided to sort out all the templates
 
 Either for the reasons mentioned above or because they do not correspond to what I am looking for / wish to discover
 
-Disclaimer : This seems to be a criticism of Nuclei, despite the concerns mentioned above, it is an incredible tool that has really changed the game. The ProjectDiscovery team provides several incredible tools, they are active and quickly take into account the issues raised. All this without expecting any counterpart from those who use their tools.
+Disclaimer : _This seems to be a criticism of Nuclei, despite the concerns mentioned above, it is an incredible tool that has really changed the game. The ProjectDiscovery team provides several incredible tools, they are active and quickly take into account the issues raised. All this without expecting any counterpart from those who use their tools._
 
 Anyway, to get back to the basic story, at one point I stopped on the [Rails Debug Mode Enabled](https://github.com/projectdiscovery/nuclei-templates/blob/52f92b91a25a2672ff5bed2e9bba1d9761f31099/exposures/logs/rails-debug-mode.yaml) template.
 
-A template considered medium, with good reason, but as I use Ruby On Rails a lot, I know that when I set up an environment, there is also a particular gem called '[Rack Mini Profiler](https://miniprofiler.com/)', which is installed and activated and which, in its basic use allows to display information on the performance of page loads, SQL queries etc... but which is misconfigured and also allows access to environment variables and other secrets stored in memory.
+A template considered medium, with good reason, but as I use Ruby On Rails a lot, I know that when I set up an environment, there is also a particular gem called '[Rack Mini Profiler](https://miniprofiler.com/)', which is installed and activated and which, in its basic use allows to display information on the performance of page loads, SQL queries etc... but when is misconfigured allows access to environment variables and other secrets stored in memory.
 
 From a medium template, a high / critical vulnerability can be discovered. So I was curious to see if I could discover a target in debug mode via this template.
 
-My recognition base was still empty at this time, so I had to choose a program to test that. So I chose a public program with a large scope, this one has resurrected many reports and it has been a bit talked about when it was released so I know that many hunters had a look at it. For my part I had taken a quick look at it, but I had not come up with anything.
+My recognition base was still empty at this time, so I had to choose a program to test that. So I chose a public program with a large scope, this one has received many reports and it has been a bit talked about when it was released so I know that many hunters had a look at it. For my part I had taken a quick look at it, but I had not come up with anything.
 
 And for the occasion, a real stroke of luck, my recon' phase ends, Nuclei starts, and I receive an alert telling me that the ruby debug mode template has been found on a subdomain ! I hasten to go to the domain, the debug mode is well activated but unfortunately the gem 'mini profiler' does not seem to be present or not activated.
 
