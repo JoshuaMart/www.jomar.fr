@@ -10,7 +10,7 @@ menu:
     weight: 8
 ---
 
-I originally wanted to name this article "The RCE that everyone missed", but since it was too teaser, this is the title you see now.
+I originally wanted to name this article "The RCE that everyone missed", but since it was too "clickbait", this is the title you see now.
 
 Why "The RCE that everyone missed"? That's what we'll see here. This article won't be very long and since there are no technical details, I'd rather focus on why I stumbled upon this RCE.
 
