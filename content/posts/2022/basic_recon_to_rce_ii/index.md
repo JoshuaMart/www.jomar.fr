@@ -38,9 +38,9 @@ A template considered medium, with good reason, but as I use Ruby On Rails a lot
 
 From a medium template, a high / critical vulnerability can be discovered. So I was curious to see if I could discover a target in debug mode via this template.
 
-My recognition base was still empty at this time, so I had to choose a program to test that. So I chose a public program with a large scope, this one has received many reports and it has been a bit talked about when it was released so I know that many hunters had a look at it. For my part I had taken a quick look at it, but I had not come up with anything.
+My recognition base was still empty at this time, then I had to choose a program to test that. I've chosed a public program with a large scope, this one has received many reports and it has been a bit talked about when it was released and I know that many hunters had a look at it. For my part I had taken a quick look at it, but I had not come up with anything.
 
-And for the occasion, a real stroke of luck, my recon' phase ends, Nuclei starts, and I receive an alert telling me that the ruby debug mode template has been found on a subdomain ! I hasten to go to the domain, the debug mode is well activated but unfortunately the gem 'mini profiler' does not seem to be present or not activated.
+And for the occasion, a real stroke of luck, my recon' phase ends, Nuclei starts, and I receive an alert telling me that the ruby debug mode template has been found on a subdomain ! I quickly opened the URL, the debug mode is well activated but unfortunately the gem 'mini profiler' does not seem to be present or not activated.
 
 And I remember visiting this domain and testing some features that seemed interesting. Except that I had missed, as well as all the other hunters who visited this domain, something important.
 
@@ -54,4 +54,4 @@ A simple but critical bug, after sending my report, it was quickly taken into ac
 
 Especially since this discovery finally put me on the track of another vulnerability much more technically interesting that I am investigating at the time I write these lines ;)
 
-P.S : At the time of publishing this article, the previous lines have led me to a new NCE of which I hope to publish a new article soon after approval of the program
+P.S : At the time of publishing this article, the previous lines have led me to a new RCE of which I hope to publish a new article soon after approval of the program
