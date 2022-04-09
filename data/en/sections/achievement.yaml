@@ -1,0 +1,37 @@
+# section information
+section:
+  name: Achievement
+  id: education
+  template: sections/education.html # Use "sections/education-alt.html for alternate template.
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+degrees:
+- name: Multiple vulnerabilities in the Galette project including SQL Injection as well as multiple stored XSS & CSRF
+  icon: fa-microscope
+  timeframe: Dec 2021
+  institution: 
+    name: CVE-2021-41262 & CVE-2021-41261 & CVE-2021-41260 
+    url: "https://github.com/galette/galette/security"
+
+- name: Multiple vulnerabilities including several CSRF and an RCE reported on the uSVN project in collaboration with Serizao
+  icon: fa-microscope
+  timeframe: Aug 2020
+  institution: 
+    name: CVE-2020-25070 & CVE-2020-25069
+    url: "http://www.usvn.info/news.html"
+- name: Information exposure in the upload directory on PrestaShop
+  icon: fa-microscope
+  timeframe: Jul 2020
+  institution: 
+    name: CVE-2020-15081
+    url: "https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-997j-f42g-x57c"
+- name: Top 3 in duo with Reptou during a live event.
+  icon: fa-microscope
+  timeframe: Jan 2020
+  institution:
+    name: YesWeHack Live Event
+    url: "https://twitter.com/J0_mart/status/1359824128119894016"

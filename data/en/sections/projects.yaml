@@ -14,9 +14,19 @@ buttons:
   filter: "all"
 - name: Hobby
   filter: "hobby"
+- name: BugBounty
+  filter: "bugbounty"
 
 # your projects
 projects:
+- name: Hunt3r
+  logo: /images/sections/projects/ruby.png
+  role: Author
+  timeline: "Jul 2021 - Present"
+  #repo: https://github.com/EasyRecon/Hunt3r # If your project is a public repo on GitHub, then provide this link. it will show star count.
+  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  summary: API built with Ruby On Rails for recognition management and focus on subdomain discovery. Enables efficient, fast and task-distributed subdomain discovery with distributed tasks in the cloud.
+  tags: ["BugBounty"]
 - name: PwnedPasswordsChecker
   logo: /images/sections/projects/go.png
   role: Author
@@ -42,7 +52,7 @@ projects:
   repo: https://github.com/JoshuaMart/AutoRecon # If your project is a public repo on GitHub, then provide this link. it will show star count.
   #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
   summary: Simple shell script for automated domain recognition with some tools (Archived)
-  tags: ["Hobby"]
+  tags: ["BugBounty"]
 
 - name: AnotherVulnerableWebApp
   logo: /images/sections/projects/php.png
