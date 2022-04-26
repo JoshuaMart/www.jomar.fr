@@ -12,6 +12,10 @@ menu:
 
 ## The Story
 
+[EDIT 26/04/22] - I added a note on my personal conclusion about Amass with a note from a conversation with Caffix about why Amass is slower than the others
+
+---
+
 Hi everyone,
 I recently came across this tweet which immediately intrigued me because I also observed that I was losing valid domains with PureDNS.
 
@@ -64,7 +68,8 @@ Before you read the results, I wanted to share my personal opinion on these resu
 
 Firstly it would certainly have to be more thorough / exhaustive via port scanning and/or using HTTPX on many more ports to increase the false positive detection attempt. But I figured that wouldn't really change the result, I wanted to have an overall idea of which tool to use in my case.
 
-* **Amass** with DNS resolution is the tool that seems to offer the best results, moreover it offers additional information that can be interesting (such as the target IP) for post-processing as well as a JSON output. However this one is extremely slow ... for Facebook the scan lasted 25 hours !
+* **Amass** with DNS resolution is the tool that seems to offer the best results, moreover it offers additional information that can be interesting (such as the target IP) for post-processing as well as a JSON output. However this one is extremely slow ... for Facebook the scan lasted 25 hours ! 
+    * _**[EDIT 26/04/22] - Interesting notes from Caffix :** When DNS throttling slows down the responses, other tools can just drop the requests and potentially lose legitimate names. Amass slows down the requests and attempts to obtain the results, which takes longer, sometimes creating problems with targets that have strong throttling policies. Amass could make it possible to drop the requests as well by exposing a few additional arguments related to DNS but the Amass objective has always been in-depth attack surface mapping._
   * In passive mode only + HTTPX is very fast but it is also the method with the most false positives
 * **DNSX** seems to be the tool with the most false positives but it is fast and like Amass it offers additional domain information and JSON output
 * **PureDNS** is also fast and seems to offer good results (not as good as Amass but better than DNSX), however it does not offer additional information or JSON output. Something to take into account here as well is that the tool doesn't seem to receive any updates at the moment compared to the other two :'(
