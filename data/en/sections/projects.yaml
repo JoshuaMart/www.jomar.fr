@@ -3,7 +3,7 @@ section:
   name: Projects
   id: projects
   enable: true
-  weight: 5
+  weight: 4
   showOnNavbar: true
   # Can optionally hide the title in sections
   # hideTitle: true
@@ -16,17 +16,51 @@ buttons:
   filter: "hobby"
 - name: BugBounty
   filter: "bugbounty"
+- name: Golang
+  filter: "golang"
+- name: Ruby
+  filter: "ruby"
+- name: PHP
+  filter: "php"
 
 # your projects
 projects:
+- name: Udup
+  logo: /images/sections/projects/ruby.png
+  role: Author
+  timeline: "Jan 2023 - Present"
+  repo: https://github.com/JoshuaMart/udup # If your project is a public repo on GitHub, then provide this link. it will show star count.
+  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  summary: Simple Ruby library to filter out duplicate or uninteresting URls
+  tags: ["Hobby", "Ruby"]
+
+- name: EasyManager
+  logo: /images/sections/projects/ruby.png
+  role: Author
+  timeline: "Aug 2022 - Present"
+  repo: https://github.com/EasyRecon/EasyManager # If your project is a public repo on GitHub, then provide this link. it will show star count.
+  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  summary: Simple Ruby library to manage Scaleway servers
+  tags: ["Hobby", "Ruby"]
+
+- name: InteractSH Library
+  logo: /images/sections/projects/ruby.png
+  role: Author
+  timeline: "Dec 2021 - Present"
+  repo: https://github.com/EasyRecon/Interactsh-Library # If your project is a public repo on GitHub, then provide this link. it will show star count.
+  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  summary: Ruby Library to use ProjectDiscovery Interactsh in pure Ruby
+  tags: ["Hobby", "Ruby"]
+
 - name: Hunt3r
   logo: /images/sections/projects/ruby.png
   role: Author
   timeline: "Jul 2021 - Present"
-  #repo: https://github.com/EasyRecon/Hunt3r # If your project is a public repo on GitHub, then provide this link. it will show star count.
+  repo: https://github.com/EasyRecon/Hunt3r # If your project is a public repo on GitHub, then provide this link. it will show star count.
   #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
   summary: API built with Ruby On Rails for recognition management and focus on subdomain discovery. Enables efficient, fast and task-distributed subdomain discovery with distributed tasks in the cloud.
-  tags: ["BugBounty"]
+  tags: ["BugBounty", "Hobby", "Ruby"]
+
 - name: PwnedPasswordsChecker
   logo: /images/sections/projects/go.png
   role: Author
@@ -34,7 +68,7 @@ projects:
   repo: https://github.com/JoshuaMart/PwnedPasswordsChecker # If your project is a public repo on GitHub, then provide this link. it will show star count.
   #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
   summary: Search (offline) if your password (NTLM or SHA1 format) has been leaked (HIBP passwords list)
-  tags: ["Hobby"]
+  tags: ["Hobby", "Ruby", "Bugbounty"]
 
 - name: HIBP_PasswordList_Slimmer
   logo: /images/sections/projects/go.png
@@ -43,7 +77,7 @@ projects:
   repo: https://github.com/JoshuaMart/HIBP_PasswordList_Slimmer # If your project is a public repo on GitHub, then provide this link. it will show star count.
   #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
   summary: Converted the text list to binary to save space 
-  tags: ["Hobby"]
+  tags: ["Hobby", "Golang"]
 
 - name: AutoRecon
   logo: /images/sections/projects/bash.png
@@ -52,7 +86,7 @@ projects:
   repo: https://github.com/JoshuaMart/AutoRecon # If your project is a public repo on GitHub, then provide this link. it will show star count.
   #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
   summary: Simple shell script for automated domain recognition with some tools (Archived)
-  tags: ["BugBounty"]
+  tags: ["BugBounty", "Hobby", "Bash"]
 
 - name: AnotherVulnerableWebApp
   logo: /images/sections/projects/php.png
@@ -61,7 +95,7 @@ projects:
   repo: https://github.com/lucasmartinelle/AnotherVulnerableWebApp # If your project is a public repo on GitHub, then provide this link. it will show star count.
   #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
   summary: Simple vulnerable site, created by a beginner for beginners. This vulnerable site covers several vulnerabilities some from real bugbounty cases encountered in bugbounty.
-  tags: ["Hobby"]
+  tags: ["Hobby", "PHP"]
 
 - name: Bounty-Dashboard
   logo: /images/sections/projects/php.png
@@ -70,4 +104,4 @@ projects:
   repo: https://github.com/lucasmartinelle/Bounty-Dashboard/ # If your project is a public repo on GitHub, then provide this link. it will show star count.
   #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
   summary: Facilitate the management of your reports as well as collaborative work by providing a web-based solution.
-  tags: ["Hobby"]
+  tags: ["Hobby", "BugBounty", "PHP"]

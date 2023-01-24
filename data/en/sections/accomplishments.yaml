@@ -1,0 +1,44 @@
+# section information
+section:
+  name: External Contributions
+  id: accomplishments
+  enable: true
+  weight: 6
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your accomplishments
+accomplishments:
+  - name: Identifying XML External Entity
+    timeline: "20 June 2022"
+    organization:
+      name: Tenable
+      url: https://tenable.com
+    courseOverview: ...
+    certificateURL: "https://fr.tenable.com/blog/identifying-xml-external-entity-how-tenable-io-web-application-scanning-can-help"
+
+  - name: Identifying Server Side Request
+    timeline: "18 Nov 2021"
+    organization:
+      name: Tenable
+      url: https://tenable.com
+    courseOverview: ...
+    certificateURL: "https://fr.tenable.com/blog/identifying-server-side-request-forgery-how-tenable-io-web-application-scanning-can-help"
+
+  - name: Mass assignment and learning new things
+    timeline: "19 Sept 2021"
+    organization:
+      name: BugBountyHunter
+      url: https://www.bugbountyhunter.com/
+    courseOverview: ...
+    certificateURL: "https://www.bugbountyhunter.com/articles/?on=mass-assignment-and-learning-new-things"
+
+  - name: My Methodology during Firstblood
+    timeline: "17 July 2021"
+    organization:
+      name: BugBountyHunter
+      url: https://www.bugbountyhunter.com
+    courseOverview: ...
+    certificateURL: "https://www.bugbountyhunter.com/articles/?on=firstbloodhackers"
+

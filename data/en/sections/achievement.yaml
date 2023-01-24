@@ -1,36 +1,92 @@
 # section information
 section:
-  name: Achievement
+  name: Achievements
   id: education
   template: sections/education.html # Use "sections/education-alt.html for alternate template.
   enable: true
-  weight: 4
+  weight: 7
   showOnNavbar: true
   # Can optionally hide the title in sections
   # hideTitle: true
 
 degrees:
+- name: Unauthenticated Cross-Site-Scripting on WP Helper Lite
+  icon: fa-bug
+  timeframe: Jan 2023
+  institution:
+    name: CVE-2023-0448
+    url: "https://www.tenable.com/security/research/tra-2023-3"
+
+- name: Unauthenticated Cross-Site-Scripting on Login with Phone Number
+  icon: fa-bug
+  timeframe: Jan 2023
+  institution:
+    name: CVE-2023-23492
+    url: "https://www.tenable.com/security/research/tra-2023-3"
+
+- name: Unauthenticated Cross-Site-Scripting on Quick Event Manager
+  icon: fa-bug
+  timeframe: Jan 2023
+  institution:
+    name: CVE-2023-23491
+    url: "https://www.tenable.com/security/research/tra-2023-3"
+
+- name: Authenticated SQL Injection on Survey Maker
+  icon: fa-bug
+  timeframe: Jan 2023
+  institution:
+    name: CVE-2023-23490
+    url: "https://www.tenable.com/security/research/tra-2023-2"
+
+- name: Unauthenticated SQL Injection on Easy Digital Downloads
+  icon: fa-bug
+  timeframe: Jan 2023
+  institution:
+    name: CVE-2023-23489
+    url: "https://www.tenable.com/security/research/tra-2023-2"
+
+- name: Unauthenticated SQL Injection on Paid Memberships Pro
+  icon: fa-bug
+  timeframe: Jan 2023
+  institution:
+    name: CVE-2023-23488
+    url: "https://www.tenable.com/security/research/tra-2023-2"
+
+- name: Open Redirect on RStudio Connect
+  icon: fa-bug
+  timeframe: Sept 2022
+  institution:
+    name: CVE-2022-38131
+    url: "https://www.tenable.com/security/research/tra-2022-30"
+
+- name: Unauthenticated SQL Injection on Metasonic Doc WebClient
+  icon: fa-bug
+  timeframe: May 2022
+  institution:
+    name: CVE-2022-1737
+    url: "(https://www.tenable.com/security/research/tra-2022-17"
+
 - name: Multiple vulnerabilities in the Galette project including SQL Injection as well as multiple stored XSS & CSRF
-  icon: fa-microscope
+  icon: fa-bug
   timeframe: Dec 2021
   institution: 
     name: CVE-2021-41262 & CVE-2021-41261 & CVE-2021-41260 
     url: "https://github.com/galette/galette/security"
 
 - name: Multiple vulnerabilities including several CSRF and an RCE reported on the uSVN project in collaboration with Serizao
-  icon: fa-microscope
+  icon: fa-bug
   timeframe: Aug 2020
   institution: 
     name: CVE-2020-25070 & CVE-2020-25069
     url: "http://www.usvn.info/news.html"
 - name: Information exposure in the upload directory on PrestaShop
-  icon: fa-microscope
+  icon: fa-bug
   timeframe: Jul 2020
   institution: 
     name: CVE-2020-15081
     url: "https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-997j-f42g-x57c"
 - name: Top 3 in duo with Reptou during a live event.
-  icon: fa-microscope
+  icon: fa-trophy
   timeframe: Jan 2020
   institution:
     name: YesWeHack Live Event
