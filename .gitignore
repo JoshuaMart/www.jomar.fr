@@ -1,2 +1,8 @@
 
 resources/
+
+.idea/
+
+content/posts/2022/.DS_Store
+
+hugo
