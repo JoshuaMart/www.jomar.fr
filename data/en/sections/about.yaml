@@ -18,7 +18,22 @@ company:
 #resume: "files/resume.pdf"
 
 # a summary about you
-summary: 'Hacker at heart, I started as a pentester and I continue to practice by doing bugbounty on various platforms. Sometimes, I work on some fun projects such as writing custom scripts, tools, etc.'
+#summary: 'Hacker at heart, I started as a pentester and I continue to practice by doing bugbounty on various platforms. Sometimes, I work on some fun projects such as writing custom scripts, tools, etc.'
+
+summary: "**Hacker at hearth** and as a Research Engineer at Tenable, I bring my passion for 
+cybersecurity to my work every day. With a background in bugbounty, I have a unique perspective on how to 
+identify and remediate potential threats to systems. I have contributed to several projects, including the 
+development of new open source tools, scripts or the discovery of vulnerabilities.  
+
+
+I am a **self-taught** who is constantly seeking out new opportunities to grow and develop my skills. Whether it's 
+through training or hands-on experience, I have a drive to stay ahead of the curve in my field. With my combination 
+of technical aptitude and passion for the industry.  
+
+
+I will continue to work on exciting projects and pursue new challenges, always with a commitment to the field that will 
+only continue to grow. Whether I am working on open source tools, participating in bugbounties, or simply sharing my 
+knowledge with others."
 
 # your social links
 # give as many as you want. use font-awesome for the icons.

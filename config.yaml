@@ -27,6 +27,7 @@ params:
     main: /images/sites/bug2.png
     inverted: /images/sites/bug1.png
     favicon: /images/sites/favicon.png
+  background: /images/background.png
 
   # GitHub repo URL of your site
   gitRepo: https://github.com/joshuaMart/www.jomar.fr
