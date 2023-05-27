@@ -25,6 +25,22 @@ buttons:
 
 # your projects
 projects:
+- name: Detective
+  logo: /images/sections/projects/ruby.png
+  role: Author
+  timeline: "May 2023 - Present"
+  repo: https://github.com/JoshuaMart/ScopesExtractor # If your project is a public repo on GitHub, then provide this link. it will show star count.
+  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  summary: Subdomain enumeration tool with results organized by vHost rather than by URL
+  tags: ["Hobby", "Ruby"]
+- name: ScopesExtractor
+  logo: /images/sections/projects/ruby.png
+  role: Author
+  timeline: "May 2023 - Present"
+  repo: https://github.com/JoshuaMart/ScopesExtractor # If your project is a public repo on GitHub, then provide this link. it will show star count.
+  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  summary: Simple ruby script/library to extract bugbounty scopes
+  tags: ["Hobby", "Ruby", "Bugbounty"]
 - name: Udup
   logo: /images/sections/projects/ruby.png
   role: Author
