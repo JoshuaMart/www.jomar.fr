@@ -1,12 +1,5 @@
 {
-	"id": "ptbr",
-	"navbarMenu": {
-		"labelHome": "HOME",
-		"labelServices": "SERVIÇOS",
-		"labelAboutMe": "SOBRE MIM",
-		"labelPortifolio": "PROJETOS",
-		"labelExperience": "EXPERIÊNCIA"
-	},
+	"id": "frfr",
 	"landingPage": {
 		"apresentationText": "Olá, eu sou",
 		"firstTypeText": "o Dev que você precisa...",

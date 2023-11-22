@@ -11,9 +11,6 @@ import Image from "next/image";
 import SocialNetworkRowStack from "@/components/SocialNetworkRowStack";
 import CarrouselTechs from "@/components/CarrouselTechs";
 
-//PDFs
-import curriculoPTBR from "../public/pdf/curriculo-ptbr.pdf";
-
 const WrapperAboutMe = styled.div`
 	display: flex;
 	align-items: center;
@@ -317,7 +314,7 @@ export default function SobreMim(props) {
 						<p>{language.aboutMePage.paragraph_three}</p>
 						<div className="tech-and-cv">
 							<SocialNetworkRowStack />
-							<ButtonCV href={curriculoPTBR} target="_blank" data-splitbee-event="Download CV">
+							<ButtonCV href='#' target="_blank" data-splitbee-event="Download CV">
 								Download CV
 							</ButtonCV>
 						</div>

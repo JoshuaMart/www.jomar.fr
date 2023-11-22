@@ -60,16 +60,6 @@ export default function FloatNavigationBar(props) {
 
 	return (
 		<NavigationBar>
-			<Link href="#section-home" passHref>
-				<NavOption
-					className="button"
-					isActive={active == "#section-home" ? true : false}
-					onClick={() => {
-						setActive("#section-home");
-					}}>
-					<Home />
-				</NavOption>
-			</Link>
 			<Link href="#section-services" passHref>
 				<NavOption
 					className="button"
@@ -91,25 +81,15 @@ export default function FloatNavigationBar(props) {
 					<Timeline />
 				</NavOption>
 			</Link>
-			<Link href="#section-portifolio" passHref>
+
+			<Link href="https://github.com/JoshuaMart/" passHref>
 				<NavOption
 					className="button"
-					isActive={active == "#section-portifolio" ? true : false}
+					isActive={active == "#" ? true : false}
 					onClick={() => {
-						setActive("#section-portifolio");
+						setActive("#");
 					}}>
 					<FolderBriefcase />
-				</NavOption>
-			</Link>
-
-			<Link href="#section-experiencia" passHref>
-				<NavOption
-					className="button"
-					isActive={active == "#section-experiencia" ? true : false}
-					onClick={() => {
-						setActive("#section-experiencia");
-					}}>
-					<Badge />
 				</NavOption>
 			</Link>
 		</NavigationBar>

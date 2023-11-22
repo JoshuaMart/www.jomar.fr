@@ -5,7 +5,7 @@ import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "@/styles/Theme";
 
 //Pacotes com textos de linguagens
-import ptbrJson from "@/config/localization/ptbr.json";
+import frfrJson from "@/config/localization/frfr.json";
 import enusJson from "@/config/localization/enus.json";
 
 export const SettingsContext = createContext({});
@@ -27,7 +27,7 @@ export default function SettingsProvider({ children }) {
 		setLanguage((changeLanguage) => !changeLanguage);
 	}
 
-	var language = changeLanguage == true ? enusJson : ptbrJson;
+	var language = changeLanguage == true ? enusJson : frfrJson;
 
 	return (
 		<SettingsContext.Provider value={{ changeTheme, changeLanguageLocalization, language }}>

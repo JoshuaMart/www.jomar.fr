@@ -1,12 +1,5 @@
 {
 	"id": "enus",
-	"navbarMenu": {
-		"labelHome": "HOME",
-		"labelServices": "SERVICES",
-		"labelAboutMe": "ABOUT ME",
-		"labelPortifolio": "PROJECTS",
-		"labelExperience": "EXPERIENCE"
-	},
 	"landingPage": {
 		"apresentationText": "Hello, I'm",
 		"firstTypeText": "the Dev you need...",

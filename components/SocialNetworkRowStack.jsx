@@ -1,10 +1,7 @@
 import styled from "styled-components";
 
-import { Facebook } from "@styled-icons/entypo-social/Facebook";
-import { Instagram } from "@styled-icons/icomoon/Instagram";
-import { Telegram } from "@styled-icons/boxicons-logos/Telegram";
+import { Twitter } from "@styled-icons/entypo-social/Twitter";
 import { MailSend } from "@styled-icons/boxicons-regular/MailSend";
-import { LogoWhatsapp } from "@styled-icons/ionicons-solid/LogoWhatsapp";
 import { LinkedinSquare } from "@styled-icons/boxicons-logos/LinkedinSquare";
 import { Github } from "@styled-icons/bootstrap/Github";
 
@@ -64,31 +61,19 @@ const ButtonSocialMediaIcon = styled.a`
 export default function SocialNetworkRowStack() {
 	return (
 		<SocialMediaContainer>
-			<ButtonSocialMediaIcon href="https://www.facebook.com/glayson.visgueira" target="_blank">
-				<Facebook />
+			<ButtonSocialMediaIcon href="https://x.com/J0_mart/" target="_blank">
+				<Twitter />
 			</ButtonSocialMediaIcon>
 
-			<ButtonSocialMediaIcon href="https://github.com/Glaysonvisgueira" target="_blank">
+			<ButtonSocialMediaIcon href="https://github.com/JoshuaMart" target="_blank">
 				<Github />
 			</ButtonSocialMediaIcon>
 
-			<ButtonSocialMediaIcon href="mailto:glaysonwow@gmail.com" target="_blank">
+			<ButtonSocialMediaIcon href="mailto:contact@jomar.fr" target="_blank">
 				<MailSend />
 			</ButtonSocialMediaIcon>
 
-			<ButtonSocialMediaIcon href="https://wa.me/5586999277101/?text=Olá%20Glayson,%20tudo%20bem?%20Vim através de sua página pessoal!" target="_blank">
-				<LogoWhatsapp />
-			</ButtonSocialMediaIcon>
-
-			<ButtonSocialMediaIcon href="https://t.me/glayson_visgueira" target="_blank">
-				<Telegram />
-			</ButtonSocialMediaIcon>
-
-			<ButtonSocialMediaIcon href="https://www.instagram.com/glayson_visgueira" target="_blank">
-				<Instagram />
-			</ButtonSocialMediaIcon>
-
-			<ButtonSocialMediaIcon href="https://www.linkedin.com/in/glayson-visgueira-7433a61b3/" target="_blank" data-splitbee-event="linkedin-access">
+			<ButtonSocialMediaIcon href="https://www.linkedin.com/in/joshua-martinelle-a34911133" target="_blank" data-splitbee-event="linkedin-access">
 				<LinkedinSquare />
 			</ButtonSocialMediaIcon>
 		</SocialMediaContainer>
