@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
-import ScrollAnimation from "react-animate-on-scroll";
 
 //Styled icons
 import { Robot } from "@styled-icons/fa-solid/Robot";
@@ -90,35 +89,29 @@ export default function _ServicesOffer() {
 	return (
 		<SectionServices id="section-services">
 			<ContainerGrid>
-				<ScrollAnimation animateIn="fadeIn" animateOnce delay={200}>
-					<CardService>
-						<Robot />
-						<h3>{language.servicesOffer.cards.seo.title}</h3>
-						<p>{language.servicesOffer.cards.seo.contentText}</p>
-					</CardService>
-				</ScrollAnimation>
+				<CardService>
+					<Robot />
+					<h3>{language.servicesOffer.cards.seo.title}</h3>
+					<p>{language.servicesOffer.cards.seo.contentText}</p>
+				</CardService>
 
-				<ScrollAnimation animateIn="fadeIn" animateOnce delay={400}>
-					<CardService>
-						<DesignIdeas />
-						<h3>{language.servicesOffer.cards.ux.title}</h3>
-						<p>{language.servicesOffer.cards.ux.contentText}</p>
-					</CardService>
-				</ScrollAnimation>
-				<ScrollAnimation animateIn="fadeIn" animateOnce delay={600}>
-					<CardService>
-						<DesignServices />
-						<h3>{language.servicesOffer.cards.branding.title}</h3>
-						<p>{language.servicesOffer.cards.branding.contentText}</p>
-					</CardService>
-				</ScrollAnimation>
-				<ScrollAnimation animateIn="fadeIn" animateOnce delay={800}>
-					<CardService>
-						<CodeBlock />
-						<h3>{language.servicesOffer.cards.development.title}</h3>
-						<p>{language.servicesOffer.cards.development.contentText}</p>
-					</CardService>
-				</ScrollAnimation>
+				<CardService>
+					<DesignIdeas />
+					<h3>{language.servicesOffer.cards.ux.title}</h3>
+					<p>{language.servicesOffer.cards.ux.contentText}</p>
+				</CardService>
+				
+				<CardService>
+					<DesignServices />
+					<h3>{language.servicesOffer.cards.branding.title}</h3>
+					<p>{language.servicesOffer.cards.branding.contentText}</p>
+				</CardService>
+				
+				<CardService>
+					<CodeBlock />
+					<h3>{language.servicesOffer.cards.development.title}</h3>
+					<p>{language.servicesOffer.cards.development.contentText}</p>
+				</CardService>
 			</ContainerGrid>
 		</SectionServices>
 	);
