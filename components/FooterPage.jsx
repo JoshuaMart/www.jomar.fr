@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import styled from "styled-components";
 import Link from "next/link";
-import ScrollAnimation from "react-animate-on-scroll";
 
 //Contexto
 import { SettingsContext } from "@/context/SettingsContext";
