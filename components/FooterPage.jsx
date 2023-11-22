@@ -49,28 +49,6 @@ const FooterContainer = styled.footer`
 	}
 `;
 
-const Divider = styled.div`
-	width: 100%;
-	border-top: 1px solid ${(props) => props.theme.colors.backgroundSecondary};
-	margin-top: 20px;
-`;
-
-const SectionFooterMenu = styled.div`
-	display: flex;
-	align-content: center;
-	justify-content: flex-start;
-	flex-direction: column;
-	width: 100%;
-	height: 100%;
-	//border: 1px solid #000;
-	padding: 5px;
-`;
-
-const FooterTextTitle = styled.h4`
-	font-weight: 800;
-	color: ${(props) => props.theme.colors.branding};
-`;
-
 const FooterText = styled.span`
 	position: relative;
 	font-weight: 400;
@@ -253,76 +231,6 @@ export default function FooterPage(props) {
 
 	return (
 		<FooterContainer>
-			<div id="grid">
-				<ScrollAnimation animateIn="fadeIn" animateOnce>
-					<SectionFooterMenu>
-						<FooterTextTitle>{language.footer.labelNavigation.title}</FooterTextTitle>
-						<Link href="#section-home" passHref>
-							<FooterText>{language.footer.labelNavigation.labelHome}</FooterText>
-						</Link>
-						<Link href="#section-services" passHref>
-							<FooterText>{language.footer.labelNavigation.labelServices}</FooterText>
-						</Link>
-						<Link href="#section-sobre-mim" passHref>
-							<FooterText>{language.footer.labelNavigation.labelAboutMe}</FooterText>
-						</Link>
-						<Link href="#section-portifolio" passHref>
-							<FooterText>{language.footer.labelNavigation.labelPortifolio}</FooterText>
-						</Link>
-						<Link href="#section-experiencia" passHref>
-							<FooterText>{language.footer.labelNavigation.labelExperience}</FooterText>
-						</Link>
-					</SectionFooterMenu>
-				</ScrollAnimation>
-
-				<ScrollAnimation animateIn="fadeIn" animateOnce delay={200}>
-					<SectionFooterMenu>
-						<FooterTextTitle>{language.footer.labelHost.title}</FooterTextTitle>
-
-						<FooterTextExternalLink href="https://vercel.com/" target="_blank">
-							Vercel
-						</FooterTextExternalLink>
-					</SectionFooterMenu>
-				</ScrollAnimation>
-
-				<ScrollAnimation animateIn="fadeIn" animateOnce delay={400}>
-					<SectionFooterMenu>
-						<FooterTextTitle>{language.footer.labelSourceCode.title}</FooterTextTitle>
-						<FooterTextExternalLink href="https://github.com/Glaysonvisgueira/glaysonvisgueira_next-js" target="_blank">
-							Github
-						</FooterTextExternalLink>
-					</SectionFooterMenu>
-				</ScrollAnimation>
-
-				<ScrollAnimation animateIn="fadeIn" animateOnce delay={600}>
-					<SectionFooterMenu>
-						<FooterTextTitle>{language.footer.labelTechs.title}</FooterTextTitle>
-
-						<FooterTextExternalLink href="https://pt-br.reactjs.org/" target="_blank">
-							React.Js
-						</FooterTextExternalLink>
-
-						<FooterTextExternalLink href="https://nextjs.org/" target="_blank">
-							Next.Js
-						</FooterTextExternalLink>
-
-						<FooterTextExternalLink href="https://styled-components.com/" target="_blank">
-							Styled components
-						</FooterTextExternalLink>
-					</SectionFooterMenu>
-				</ScrollAnimation>
-
-				<ScrollAnimation animateIn="fadeIn" animateOnce delay={800}>
-					<SectionFooterMenu>
-						<FooterTextTitle>{language.footer.labelStats.title}</FooterTextTitle>
-
-						<FooterTextExternalLink href="https://analytics.umami.is/share/6fxpADR03bK8xSHp/web%20portfolio" target="_blank">
-							{language.footer.labelStats.stats}
-						</FooterTextExternalLink>
-					</SectionFooterMenu>
-				</ScrollAnimation>
-			</div>
-			<Divider />
 			<ContainerBuildCopyright>
 				<SocialNetworkRowStack />
 				<div className="build-and-button-top">
