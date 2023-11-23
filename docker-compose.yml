@@ -1,0 +1,21 @@
+services:
+  app:
+    image: main
+    command: bash -c "npm run build && npm run start"
+    build: .
+    volumes:
+        - .:/app
+        - /app/node_modules
+        - /app/.next
+    networks:
+        - traefik-global-proxy
+    labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.main.rule=Host(`www.jomar.fr`)"
+        - "traefik.http.routers.main.entrypoints=websecure"
+        - "traefik.http.routers.main.tls.certresolver=letsencrypt"
+        - "traefik.http.services.main.loadbalancer.server.port=3000"
+
+networks:
+  traefik-global-proxy:
+    external: true
