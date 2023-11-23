@@ -2,12 +2,11 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Link from "next/link";
 
-//Ícones
-import { Home } from "@styled-icons/heroicons-solid/Home";
+//Icones
 import { Code } from "@styled-icons/fluentui-system-regular/Code";
 import { Timeline } from "@styled-icons/fluentui-system-regular/Timeline";
 import { FolderBriefcase } from "@styled-icons/fluentui-system-filled/FolderBriefcase";
-import { Badge } from "@styled-icons/material-outlined/Badge";
+import { Newspaper } from "@styled-icons/bootstrap/Newspaper";
 
 const NavigationBar = styled.div`
 	display: flex;
@@ -85,11 +84,22 @@ export default function FloatNavigationBar(props) {
 			<Link href="https://github.com/JoshuaMart/" passHref>
 				<NavOption
 					className="button"
-					isActive={active == "#" ? true : false}
+					isActive={active == "#Github" ? true : false}
 					onClick={() => {
-						setActive("#");
+						setActive("#Github");
 					}}>
 					<FolderBriefcase />
+				</NavOption>
+			</Link>
+
+			<Link href="https://j0mar.substack.com/" passHref>
+				<NavOption
+					className="button"
+					isActive={active == "#Substack" ? true : false}
+					onClick={() => {
+						setActive("#Substack");
+					}}>
+					<Newspaper />
 				</NavOption>
 			</Link>
 		</NavigationBar>

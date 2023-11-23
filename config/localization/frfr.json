@@ -6,33 +6,32 @@
 	"servicesOffer": {
 		"cards": {
 			"seo": {
-				"title": "Développement",
-				"contentText": "..."
+				"title": "Development",
+				"contentText": ""
 			},
 			"ux": {
-				"title": "Sécurité Web",
-				"contentText": "..."
+				"title": "Web Security",
+				"contentText": ""
 			},
 			"branding": {
-				"title": "Rédaction",
-				"contentText": "..."
+				"title": "Writing",
+				"contentText": ""
 			},
 			"development": {
-				"title": "Système",
-				"contentText": "..."
+				"title": "System",
+				"contentText": ""
 			}
 		}
 	},
 	"aboutMePage": {
 		"title": "A Propos",
-		"paragraph_one": "...",
-		"paragraph_two": "...",
-		"paragraph_three": "...",
+		"paragraph_one": "Hacker dans l'âme et Research Engineer chez Tenable, j'apporte chaque jour ma passion pour la cybersécurité à mon travail. Avec une expérience en bugbounty, j'ai une perspective unique sur la façon d'identifier et de remédier aux menaces potentielles pour les systèmes. J'ai contribué à plusieurs projets, dont le développement de nouveaux outils open source, de scripts ou encore la découverte de 0day.",
+		"paragraph_two": "Je suis un autodidacte qui recherche constamment de nouvelles opportunités pour grandir et développer mes compétences. Que ce soit par le biais de formations ou d'expériences pratiques, j’ai la volonté de garder une longueur d’avance dans mon domaine grâce à ma combinaison d’aptitudes techniques et de ma passion.",
+		"paragraph_three": "Je continue à travailler sur des projets passionnants et à relever de nouveaux défis toujours avec un engagement. Que ce soit sur des outils open source, du bugbounty ou partager mes connaissances avec d'autres.",
 		"github_card": {
 			"bio": "🧑‍💻 Research Engineer - Tenable",
-			"followers": "...",
-			"following": "...",
-			"repos": "..."
+			"followers": "Followers",
+			"repos": "Projets Publics"
 		},
 		"alt_dev_img": "Joshua MARTINELLE",
 		"more": "En savoir plus"

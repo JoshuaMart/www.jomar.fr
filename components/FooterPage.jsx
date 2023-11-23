@@ -187,7 +187,7 @@ export default function FooterPage(props) {
 	return (
 		<FooterContainer>
 			<ContainerBuildCopyright>
-				<SocialNetworkRowStack /><Link href="#section-home" passHref><FooterText>{language.navbarMenu.labelBlog}</FooterText></Link>
+				<SocialNetworkRowStack /><Link href="#" passHref><FooterText>{language.navbarMenu.labelBlog}</FooterText></Link>
 				<div className="build-and-button-top">
 					<TextBuildProject>
 						{language.footer.labelBuildVersion}: {commit || ""}

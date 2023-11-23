@@ -293,13 +293,15 @@ export default function SobreMim(props) {
 										<p>{githubUserData?.followers}</p>
 										<span>{language.aboutMePage.github_card.followers}</span>
 									</div>
-									<div className="stats">
-										<p>{githubUserData?.following}</p>
-										<span>{language.aboutMePage.github_card.following}</span>
-									</div>
+
 									<div className="stats">
 										<p>{githubUserData?.public_repos}</p>
 										<span>{language.aboutMePage.github_card.repos}</span>
+									</div>
+
+									<div className="stats">
+										<p>29</p>
+										<span>CVE</span>
 									</div>
 								</div>
 							</div>

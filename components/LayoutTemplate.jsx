@@ -169,7 +169,7 @@ export default function LayoutTemplate({ children }) {
 		<>
 			<HeaderContainer>
 				<Fade top delay={100} duration={200}>
-					<Link href="#section-home" passHref>
+					<Link href="#" passHref>
 						<LogoContainer>
 							<LogoText>
 								<CaracteresLogo>&lt;</CaracteresLogo>Jomar <CaracteresLogo>/&gt;</CaracteresLogo>
