@@ -266,7 +266,7 @@ export default function SobreMim(props) {
 
 	useEffect(() => {
 		async function fetchGithubStats() {
-			const response = await fetch("https://api.github.com/users/glaysonvisgueira");
+			const response = await fetch("https://api.github.com/users/JoshuaMart");
 			const json = await response.json();
 			setGithubUserData(json);
 		}
@@ -285,10 +285,8 @@ export default function SobreMim(props) {
 								<Image src="/img/user-photo.jpg" alt={language.aboutMePage.alt_dev_img} layout="fill" objectFit="cover" className="image-rounded" />
 							</div>
 							<div className="content">
-								<h3>{githubUserData?.name}</h3>
-								<a href={githubUserData?.html_url} target="_blank" rel="noreferrer">
-									@{githubUserData?.login}
-								</a>
+								<h3>Joshua MARTINELLE</h3>
+
 								<p>{language.aboutMePage.github_card.bio}</p>
 								<div className="github-stats">
 									<div className="stats">
@@ -314,8 +312,8 @@ export default function SobreMim(props) {
 						<p>{language.aboutMePage.paragraph_three}</p>
 						<div className="tech-and-cv">
 							<SocialNetworkRowStack />
-							<ButtonCV href='#' target="_blank" data-splitbee-event="Download CV">
-								Download CV
+							<ButtonCV href='https://github.com/JoshuaMart' target="_blank" data-splitbee-event={language.aboutMePage.more}>
+								{language.aboutMePage.more}
 							</ButtonCV>
 						</div>
 					</div>

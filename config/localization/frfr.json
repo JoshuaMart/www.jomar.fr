@@ -1,164 +1,43 @@
 {
 	"id": "frfr",
-	"landingPage": {
-		"apresentationText": "Olá, eu sou",
-		"firstTypeText": "o Dev que você precisa...",
-		"secondTypeText": "Glayson Visgueira",
-		"resumeText": "Desenvolvedor Front-End e desenvolvo interfaces modernas e de alta qualidade, com foco em performance, animações, responsividade e construídas com otimização em SEO.",
-		"buttonText": "Saiba mais"
+	"navbarMenu": {
+		"labelBlog": "Mes articles"
 	},
 	"servicesOffer": {
-		"title": "Serviços oferecidos",
 		"cards": {
 			"seo": {
-				"title": "SEO",
-				"contentText": "Através de técnicas de SEO, irei elevar a taxa de conversão do seu produto e aumentar sua visibilidade online de forma orgânica, ou seja, sem depender de anúncios para serem bem sucedidas."
+				"title": "Développement",
+				"contentText": "..."
 			},
 			"ux": {
-				"title": "UX/UI",
-				"contentText": "Criação de design web responsivo, focado em usabilidade para prover a melhor experiência de usuário para gerar leads para seu produto."
+				"title": "Sécurité Web",
+				"contentText": "..."
 			},
 			"branding": {
-				"title": "BRANDING",
-				"contentText": "Ajudo você a posicionar sua marca da forma correta, potencializando resultados positivos através das boas práticas do marketing digital."
+				"title": "Rédaction",
+				"contentText": "..."
 			},
 			"development": {
-				"title": "DESENVOLVIMENTO",
-				"contentText": "Desenvolvimento de sistemas 100% personalizados que vão automatizar a administração do seu negócio."
+				"title": "Système",
+				"contentText": "..."
 			}
 		}
 	},
 	"aboutMePage": {
-		"title": "SOBRE MIM",
-		"paragraph_one": "Sou um desenvolvedor front-end altamente motivado e sempre buscando aprender novas tecnologias. Tenho experiência sólida em React, React Native e Next.js, e estou sempre disponível para enfrentar novos desafios e aprimorar minhas habilidades. Tenho paixão por criar interfaces de usuário incríveis e responsivas, e gosto de trabalhar em problemas desafiadores. Além disso, sou capaz de trabalhar eficazmente em equipe e comunicar claramente com outros membros do time. Estou sempre disposto a aprender e me adaptar a novas situações, fazendo com que eu seja um desenvolvedor flexível e confiável para qualquer projeto. ",
-		"paragraph_two": "Possuo maior aptidão para área de Front-end e conhecimentos sólidos na stack: React.Js, Next.Js, HTML, Css e Styled components.",
-		"paragraph_three": "Bacharel em Sistemas de informações pelo Centro Universitário Maurício de Nassau, com graduação finalizada no primeiro semestre de 2021. Trabalhei durante 9 anos na empresa Claudino S/A, nos quais 8 anos foram na área administrativa e a 1 ano no setor de TI da empresa, mais especificamente na equipe responsável pelo Ecommerce da empresa, onde diariamente realizo manutenções ou desenvolvimento de novas funcionalidades que utilizam as tecnologias: Python, Django, Django REST Framework, React.js, Next.Js e PostgreSQL.",
+		"title": "A Propos",
+		"paragraph_one": "...",
+		"paragraph_two": "...",
+		"paragraph_three": "...",
 		"github_card": {
-			"bio": "Fullstack developer com maior experiência na stack Javascript, Node.js, React, React Native e Next.js.",
-			"followers": "Seguidores",
-			"following": "Seguindo",
-			"repos": "Repositórios"
+			"bio": "🧑‍💻 Research Engineer - Tenable",
+			"followers": "...",
+			"following": "...",
+			"repos": "..."
 		},
-		"alt_dev_img": "Desenvolvedor Glayson Visgueira"
-	},
-	"portifolioPage": {
-		"title": "PROJETOS",
-		"labelFilter": "TODOS",
-		"createdLabel": "Criado em",
-		"projects": {
-			"id_1": {
-				"title": "SISTEMA DE IRRIGAÇÃO AUTOMÁTICO",
-				"description": "Implementação de um algoritmo de inteligência artificial, conhecido como algoritmo nebuloso (ou lógica difusa) que utiliza a biblioteca jFuzzyLogic. Nessa implementação, há uso da inteligência artificial para que dependendo da situação atual de três aspectos, que são: temperatura, luminosidade e umidade, haja ativação automática de um sistema de irrigação de culturas agrícolas."
-			},
-			"id_2": {
-				"title": "DEVRADAR",
-				"description": "Aplicativo resultante da semana Omnistack #10 da Rocketseat. A aplicação visa conectar desenvolvedores próximos de sua localização atual e que trabalham com as mesmas tecnologias."
-			},
-			"id_3": {
-				"title": "BE THE HERO",
-				"description": "Aplicativo resultante da semana Omnistack #11 da Rocketseat. A aplicação é um meio de conectar pessoas à ONGS que necessitam de algum tipo de ajuda.ed some kind of help."
-			},
-			"id_4": {
-				"title": "INTEGRA API WRAPPER",
-				"description": "Servidor Node.js para utilização da API Inthegra fornecida pela STRANS de Teresina - PI."
-			},
-			"id_5": {
-				"title": "LETMEASK",
-				"description": "Aplicativo resultante da Next Level Week #06 da Rocketseat. A aplicação fornece um ambiente onde o usuário pode logar utilizando sua conta Google e criar salas sobre assuntos de seu interesse para que outros usuários criem perguntas."
-			},
-			"id_6": {
-				"title": "PLANTMANAGER",
-				"description": "Aplicativo resultante da Next Level Week #05 da Rocketseat. A aplicação fornece um agendador de irrigação para suas plantas, dando dicas sobre  cada espécie, assim como os melhores horários de irrigação. O aplicativo exibe uma notificação em push sempre que estiver no horário de irrigar sua planta."
-			},
-			"id_7": {
-				"title": "SISTEMA DE PESQUISAS NPS",
-				"description": "Aplicativo resultante da Next Level Week #04 da Rocketseat. A aplicação permite calcular o NPS (Net Promoter Score) da empresa, através de pesquisas de satisfação enviadas a usuários por e-mail."
-			},
-			"id_8": {
-				"title": "FASTTRACK API",
-				"description": "Backend de um servidor em Node.js que fornece uma API REST que permite o compartilhamento de geolocalização do smartphone para um banco de dados em nuvem mantido pelo MongoDB."
-			},
-			"id_9": {
-				"title": "INTHEGRE-SE APP",
-				"description": "Aplicativo que monitora a frota de ônibus público da cidade de Teresina - PI, e exibe em um mapa a localização atual de cada ônibus em atividade no momento, com intervalos de 30 segundos entre cada atualização de posição."
-			},
-			"id_10": {
-				"title": "CRAWLER DAS POSIÇÃO DE RADARES",
-				"description": "Estudo da biblioteca BeautifulSoup que utilizada com a linguagem de programação Python, possibilita coletar dados de websites. Este algoritmo busca no site da prefeitura da cidade de Teresina - PI e fornece o link de download da posição atual dos radares de velocidade na cidade."
-			},
-			"id_11": {
-				"title": "PÁGINA PORTIFÓLIO",
-				"description": "Página portifólio pessoal, contruída utilizando React.js, Next.js, Styled Components e hospedado na plataforma da Vercel."
-			},
-			"id_12": {
-				"title": "AGREGADOR DE INFORMAÇÕES LOGÍSTICAS",
-				"description": "Sistema para agregar as informações lógisticas internas da empresa."
-			},
-			"id_13": {
-				"title": "API AGREGADOR DE INFORMAÇÕES LOGÍSTICAS",
-				"description": "API escrita em Javascript/Node.js e hospedada em um servidor EC2 na AWS para prover as informações logísticas internas da empresa."
-			},
-			"id_14": {
-				"title": "BYTEBANK",
-				"description": "Aplicativo resultante da trilha Flutter da Alura. Utilizando o Flutter para gerar o aplicativo multiplataforma, esta aplicação serve para cadastrar números de conta e seus respectivos valores para serem gravados em estados dinâmicos para exibição no app."
-			},
-			"id_15": {
-				"title": "CALCULADORA WEB",
-				"description": "Web aplicativo de uma calculadora, escrito com typescript e utilizando o framework/compilador Svelte."
-			},
-			"id_16": {
-				"title": "LAYOUT MATERIAL DESIGN",
-				"description": "Estrutura boilerplate para uma aplicação utilizando o framework frontend Material UI."
-			},
-			"id_17": {
-				"title": "RN MAPS",
-				"description": "Pequena aplicação de teste que utiliza o framework React Native para construir uma visão de mapas utilizando o SDK do Google Maps."
-			},
-			"id_18": {
-				"title": "RN E-COMMERCE UI",
-				"description": "UI que imita alguns componentes, páginas e dinâmicas existentes em aplicativos móveis nativos para e-commerce."
-			},
-			"id_19": {
-				"title": "FIREBASE API BOILERPLATE",
-				"description": "Estrutura boilerplate que integra um CRUD no banco de dados Firestore utilizando API do firebase."
-			}
-		}
-	},
-	"experiencePage": {
-		"title": "EXPERIÊNCIA",
-		"timeline": {
-			"labelPosition": "Cargo",
-			"labelTitle": "Título",
-			"labelCompany": "Empresa",
-			"labelCategory": "Categoria",
-			"labelInstitution": "Instituição",
-			"labelProfessionalCourse": "Curso profissionalizante",
-			"labelBachelorDegree": "Bacharelado",
-			"labelExtensionCourse": "Curso de extensão"
-		}
+		"alt_dev_img": "Joshua MARTINELLE",
+		"more": "En savoir plus"
 	},
 	"footer": {
-		"labelNavigation": {
-			"title": "NAVEGAÇÃO",
-			"labelHome": "Home",
-			"labelServices": "Serviços",
-			"labelAboutMe": "Sobre mim",
-			"labelPortifolio": "Projetos",
-			"labelExperience": "Experiência"
-		},
-		"labelHost": {
-			"title": "HOSPEDAGEM"
-		},
-		"labelSourceCode": {
-			"title": "CÓDIGO FONTE"
-		},
-		"labelTechs": {
-			"title": "TECNOLOGIAS"
-		},
-		"labelStats": {
-			"title": "ESTATÍSTICAS",
-			"stats": "Dashboard"
-		},
-		"labelBuildVersion": "Versão"
+		"labelBuildVersion": "Version"
 	}
 }

@@ -48,96 +48,6 @@ const FooterContainer = styled.footer`
 	}
 `;
 
-const FooterText = styled.span`
-	position: relative;
-	font-weight: 400;
-	font-size: 14px;
-	color: ${(props) => props.theme.colors.subtitle};
-	transition: all 0.3s ease;
-	margin-top: 3px;
-	margin-bottom: 3px;
-	text-transform: capitalize;
-
-	&:hover {
-		cursor: pointer;
-	}
-
-	&::before,
-	&::after {
-		content: "";
-		position: absolute;
-		left: 0;
-		right: 0;
-		height: 2px;
-		background-color: ${(props) => props.theme.colors.branding};
-		transform: scaleX(0);
-		transition: transform 0.5s ease;
-	}
-
-	&::before {
-		top: 0;
-		transform-origin: center right;
-	}
-
-	&:hover::before {
-		transform-origin: center left;
-		transform: scaleX(1);
-	}
-
-	&::after {
-		bottom: 0;
-		transform-origin: center left;
-	}
-
-	&:hover::after {
-		transform-origin: center right;
-		transform: scaleX(1);
-	}
-`;
-
-const FooterTextExternalLink = styled.a`
-	position: relative;
-	font-weight: 400;
-	font-size: 14px;
-	color: ${(props) => props.theme.colors.subtitle};
-	transition: all 0.3s ease;
-	margin-top: 3px;
-	margin-bottom: 3px;
-	text-decoration: none;
-
-	&::before,
-	&::after {
-		content: "";
-		position: absolute;
-		left: 0;
-		right: 0;
-		height: 2px;
-		background-color: ${(props) => props.theme.colors.branding};
-		transform: scaleX(0);
-		transition: transform 0.5s ease;
-	}
-
-	&::before {
-		top: 0;
-		transform-origin: center right;
-	}
-
-	&:hover::before {
-		transform-origin: center left;
-		transform: scaleX(1);
-	}
-
-	&::after {
-		bottom: 0;
-		transform-origin: center left;
-	}
-
-	&:hover::after {
-		transform-origin: center right;
-		transform: scaleX(1);
-	}
-`;
-
 const TextBuildProject = styled.h4`
 	font-weight: 800;
 	color: ${(props) => props.theme.colors.branding};
@@ -205,6 +115,53 @@ const ButtonUpToTop = styled.div`
 	}
 `;
 
+const FooterText = styled.span`
+	position: relative;
+	font-weight: 400;
+	font-size: 14px;
+	color: ${(props) => props.theme.colors.subtitle};
+	transition: all 0.3s ease;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	text-transform: capitalize;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		height: 2px;
+		background-color: ${(props) => props.theme.colors.branding};
+		transform: scaleX(0);
+		transition: transform 0.5s ease;
+	}
+
+	&::before {
+		top: 0;
+		transform-origin: center right;
+	}
+
+	&:hover::before {
+		transform-origin: center left;
+		transform: scaleX(1);
+	}
+
+	&::after {
+		bottom: 0;
+		transform-origin: center left;
+	}
+
+	&:hover::after {
+		transform-origin: center right;
+		transform: scaleX(1);
+	}
+`;
+
 export default function FooterPage(props) {
 	const { language } = useContext(SettingsContext);
 	const [commit, setCommit] = useState("");
@@ -214,13 +171,12 @@ export default function FooterPage(props) {
 	}, []);
 
 	async function getLastCommit() {
-		const response = await fetch("https://api.github.com/repos/glaysonvisgueira/glaysonvisgueira_next-js/commits");
+		const response = await fetch("https://api.github.com/repos/JoshuaMart/www.jomar.fr/commits");
 		const json = await response.json();
-		//Setar no state somente as 6 primeiras letras do SHA code do último commit
+
 		setCommit(json[0].sha.slice(0, 6));
 	}
 
-	//Função para subir ao topo da página.
 	const goToTop = () => {
 		window.scrollTo({
 			top: 0,
@@ -231,7 +187,7 @@ export default function FooterPage(props) {
 	return (
 		<FooterContainer>
 			<ContainerBuildCopyright>
-				<SocialNetworkRowStack />
+				<SocialNetworkRowStack /><Link href="#section-home" passHref><FooterText>{language.navbarMenu.labelBlog}</FooterText></Link>
 				<div className="build-and-button-top">
 					<TextBuildProject>
 						{language.footer.labelBuildVersion}: {commit || ""}

@@ -180,6 +180,9 @@ export default function LayoutTemplate({ children }) {
 
 				<NavbarOptionContainer>
 					<Fade top delay={600} duration={200}>
+						<Link href="https://j0mar.substack.com/" passHref>
+							<NavbarOption>{language.navbarMenu.labelBlog}</NavbarOption>
+						</Link>
 						<LanguageSwitchButton />
 						<SwitchThemeButton />
 					</Fade>

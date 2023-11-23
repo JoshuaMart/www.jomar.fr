@@ -3,46 +3,24 @@ import Marquee from "react-fast-marquee";
 import styled from "styled-components";
 import { useTheme } from "styled-components";
 
-import { Amazonaws } from "@styled-icons/simple-icons/Amazonaws";
-import { GoogleCloud } from "@styled-icons/boxicons-logos/GoogleCloud";
+import { Kalilinux } from "@styled-icons/simple-icons/Kalilinux";
+import { Docker } from "@styled-icons/boxicons-logos/Docker";
 import { Firebase } from "@styled-icons/boxicons-logos/Firebase";
 import { Mongodb } from "@styled-icons/simple-icons/Mongodb";
 import { Postgresql } from "@styled-icons/simple-icons/Postgresql";
 import { Sqlite } from "@styled-icons/simple-icons/Sqlite";
 import { Javascript } from "@styled-icons/boxicons-logos/Javascript";
-import { Java } from "@styled-icons/fa-brands/Java";
-import { ReactLogo } from "@styled-icons/boxicons-logos/ReactLogo";
-import { Nextdotjs } from "@styled-icons/simple-icons/Nextdotjs";
 import { Python } from "@styled-icons/boxicons-logos/Python";
-import { Flutter } from "@styled-icons/boxicons-logos/Flutter";
-import { Django } from "@styled-icons/boxicons-logos/Django";
-import { Nodejs } from "@styled-icons/boxicons-logos/Nodejs";
-import { LogoVercel } from "@styled-icons/ionicons-solid/LogoVercel";
-import { Netlify } from "@styled-icons/simple-icons/Netlify";
-import { Materialui } from "@styled-icons/simple-icons/Materialui";
-import { Styledcomponents } from "@styled-icons/simple-icons/Styledcomponents";
-import { Css3 } from "@styled-icons/boxicons-logos/Css3";
 import { Html5 } from "@styled-icons/boxicons-logos/Html5";
-import { Amazons3 } from "@styled-icons/simple-icons/Amazons3";
 import { Git } from "@styled-icons/boxicons-logos/Git";
-import { LogoBitbucket } from "@styled-icons/ionicons-solid/LogoBitbucket";
 import { GithubOutline } from "@styled-icons/evaicons-outline/GithubOutline";
 import { Api } from "@styled-icons/material-rounded/Api";
-import { Oracle } from "@styled-icons/simple-icons/Oracle";
 import { Bootstrap } from "@styled-icons/boxicons-logos/Bootstrap";
 import { TailwindCss } from "@styled-icons/boxicons-logos/TailwindCss";
 import { Mysql } from "@styled-icons/simple-icons/Mysql";
 import { Linux } from "@styled-icons/fa-brands/Linux";
 import { Windows } from "@styled-icons/boxicons-logos/Windows";
-import { Android } from "@styled-icons/boxicons-logos/Android";
-import { Ios } from "@styled-icons/simple-icons/Ios";
-import { Typescript } from "@styled-icons/simple-icons/Typescript";
-import { Sass } from "@styled-icons/fa-brands/Sass";
-import { Jquery } from "@styled-icons/boxicons-logos/Jquery";
-import { Figma } from "@styled-icons/boxicons-logos/Figma";
-import { Adobephotoshop } from "@styled-icons/simple-icons/Adobephotoshop";
-import { Visualstudiocode } from "@styled-icons/simple-icons/Visualstudiocode";
-import { Trello } from "@styled-icons/boxicons-logos/Trello";
+import { Ruby } from "@styled-icons/simple-icons/Ruby";
 
 const Carrousel = styled.div`
 	display: flex;
@@ -92,31 +70,10 @@ export default function CarrouselTechs(props) {
 		<Marquee autoFill gradient loop={0} gradientColor={theme.colors.backgroundPageRgb} direction={direction}>
 			<Carrousel colorIcon={colorIcon}>
 				<div className="slide">
-					<Adobephotoshop />
+					<Kalilinux />
 				</div>
 				<div className="slide">
-					<Amazons3 />
-				</div>
-				<div className="slide">
-					<Visualstudiocode />
-				</div>
-				<div className="slide">
-					<Trello />
-				</div>
-				<div className="slide">
-					<Oracle />
-				</div>
-				<div className="slide">
-					<Amazonaws />
-				</div>
-				<div className="slide">
-					<GoogleCloud />
-				</div>
-				<div className="slide">
-					<Firebase />
-				</div>
-				<div className="slide">
-					<Mongodb />
+					<Docker />
 				</div>
 				<div className="slide">
 					<Postgresql />
@@ -128,49 +85,13 @@ export default function CarrouselTechs(props) {
 					<Javascript />
 				</div>
 				<div className="slide">
-					<Java />
-				</div>
-				<div className="slide">
-					<ReactLogo />
-				</div>
-				<div className="slide">
-					<Nextdotjs />
-				</div>
-				<div className="slide">
 					<Python />
-				</div>
-				<div className="slide">
-					<Flutter />
-				</div>
-				<div className="slide">
-					<Django />
-				</div>
-				<div className="slide">
-					<Nodejs />
-				</div>
-				<div className="slide">
-					<LogoVercel />
-				</div>
-				<div className="slide">
-					<Netlify />
-				</div>
-				<div className="slide">
-					<Materialui />
-				</div>
-				<div className="slide">
-					<Styledcomponents />
-				</div>
-				<div className="slide">
-					<Css3 />
 				</div>
 				<div className="slide">
 					<Html5 />
 				</div>
 				<div className="slide">
 					<Git />
-				</div>
-				<div className="slide">
-					<LogoBitbucket />
 				</div>
 				<div className="slide">
 					<GithubOutline />
@@ -194,22 +115,7 @@ export default function CarrouselTechs(props) {
 					<Windows />
 				</div>
 				<div className="slide">
-					<Android />
-				</div>
-				<div className="slide">
-					<Ios />
-				</div>
-				<div className="slide">
-					<Typescript />
-				</div>
-				<div className="slide">
-					<Sass />
-				</div>
-				<div className="slide">
-					<Jquery />
-				</div>
-				<div className="slide">
-					<Figma />
+					<Ruby />
 				</div>
 			</Carrousel>
 		</Marquee>

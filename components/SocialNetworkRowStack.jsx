@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+import { Substack } from "@styled-icons/simple-icons/Substack";
 import { Twitter } from "@styled-icons/entypo-social/Twitter";
 import { MailSend } from "@styled-icons/boxicons-regular/MailSend";
 import { LinkedinSquare } from "@styled-icons/boxicons-logos/LinkedinSquare";
@@ -61,6 +62,10 @@ const ButtonSocialMediaIcon = styled.a`
 export default function SocialNetworkRowStack() {
 	return (
 		<SocialMediaContainer>
+			<ButtonSocialMediaIcon href="https://j0mar.substack.com/" target="_blank">
+				<Substack />
+			</ButtonSocialMediaIcon>
+
 			<ButtonSocialMediaIcon href="https://x.com/J0_mart/" target="_blank">
 				<Twitter />
 			</ButtonSocialMediaIcon>
